@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">RedditCloneAndroid</string>
     <string name="splash_screen">Splash screen</string>
+    <string name="dobrodosli">Dobrodosli u RedditClone</string>
+    <string name="prijava">Prijavite se</string>
+    <string name="korisnicko_ime">Korisnicko ime:</string>
+    <string name="lozinka">Lozinka:</string>
+    <string name="korisnicko_ime_hint">Korisnicko ime</string>
+    <string name="lozinka_hint">Lozinka:</string>
+    <string name="prijava_dugme">Prijavi se</string>
 </resources>
