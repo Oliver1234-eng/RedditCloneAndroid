@@ -10,7 +10,7 @@
     android:background="@color/pozadina">
 
     <LinearLayout
-        android:id="@+id/dobrodosli"
+        android:id="@+id/dobrodosli_prijava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -101,7 +101,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/lozinka_hint"
-            android:paddingLeft="100sp"/>
+            android:paddingLeft="100sp"
+            android:inputType="textPassword"/>
 
     </LinearLayout>
 
@@ -119,6 +120,40 @@
             android:text="@string/prijava_dugme"
             android:layout_marginTop="5mm"
             android:backgroundTint="@color/gray"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registruj_se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/link_do_registracije"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registruj_se"
+            android:paddingTop="2.5mm"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/link_do_gosta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gost"
+            android:paddingTop="2.5mm"/>
 
 
     </LinearLayout>
