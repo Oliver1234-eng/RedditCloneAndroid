@@ -152,7 +152,8 @@
             android:textColor="@color/tekst"
             android:textSize="23dp"
             android:gravity="center"
-            android:paddingTop="3mm"/>
+            android:paddingTop="3mm"
+            android:paddingRight="5mm"/>
 
         <Button
             android:id="@+id/button_avatar_registration"
@@ -183,7 +184,8 @@
             android:textStyle="normal"
             android:paddingLeft="3mm"
             android:textColor="@color/tekst"
-            android:textSize="23dp"/>
+            android:textSize="23dp"
+            android:paddingRight="14mm"/>
 
         <Button
             android:id="@+id/button1"

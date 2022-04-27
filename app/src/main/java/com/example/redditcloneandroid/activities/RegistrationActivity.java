@@ -60,9 +60,9 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                successMessage();
                 Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
                 startActivity(intent);
+                successMessage();
             }
         });
     }

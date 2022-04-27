@@ -8,11 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RedditCloneAndroid">
+        android:theme="@style/AppTheme">
 
         <activity
             android:name="com.example.redditcloneandroid.MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity
@@ -28,11 +29,19 @@
 
         <activity
             android:name=".activities.RegistrationActivity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".activities.MainPageActivity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activities.PostDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
     </application>
 
