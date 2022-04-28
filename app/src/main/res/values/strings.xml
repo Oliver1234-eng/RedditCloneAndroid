@@ -52,4 +52,25 @@
     <string name="action_settings">Settings</string>
     <string name="action_refresh">Refresh</string>
     <string name="action_new">New</string>
+    <string name="administrator">Deo za administratora:</string>
+    <string name="moderator">Deo za moderatora:</string>
+    <string name="korisnik">Deo za korisnika:</string>
+    <string name="profil_korisnika">Profil</string>
+    <string name="odjava">Odjava</string>
+    <string name="odjava_sa_sistema">Odjavi se sa sistema</string>
+    <string name="podesavanja_profila">Podesavanja profila</string>
+    <string name="promeni_lozinku">Promeni lozinku:</string>
+    <string name="promeni_lozinku_dva">Promeni</string>
+    <string name="prikazi_ime">Prikazi ime (opciono i ne menja Vase korisnicko ime):</string>
+    <string name="opis_profila">Opis profila (opciono):</string>
+    <string name="opis_profila_dva">Opis profila (opciono)</string>
+    <string name="avatar_profil">Avatar:</string>
+    <string name="ukucaj_ime_opciono">Ukucaj ime (opciono)</string>
+    <string name="odaberite_vasu_avatar_sliku">Odaberite Vasu avatar sliku</string>
+    <string name="sacuvaj_izmene_button">Sacuvaj izmene</string>
+    <string name="odustani_button">Odustani</string>
+    <string name="suspendovanje_zajednice">Suspendovanje zajednice</string>
+    <string name="uklanjanje_moderatora">Uklanjanje moderatora</string>
+    <string name="blokiranje_korisnika">Blokiranje korisnika</string>
+    <string name="spisak_neprikladnog_sadrzaja">Spisak neprikladnog sadrzaja</string>
 </resources>

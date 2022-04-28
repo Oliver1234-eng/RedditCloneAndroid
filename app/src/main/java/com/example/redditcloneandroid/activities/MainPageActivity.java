@@ -45,6 +45,17 @@ public class MainPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_post);
 
+        Button button = (Button) findViewById(R.id.profil_dugme);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainPageActivity.this, ProfilActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
         prepareMenu(mNavItems);
 
         mTitle = getTitle();
@@ -105,6 +116,8 @@ public class MainPageActivity extends AppCompatActivity {
         mNavItems.add(new NavItem(getString(R.string.preferences), getString(R.string.preferences_long), R.drawable.ic_action_settings));
         mNavItems.add(new NavItem(getString(R.string.about), getString(R.string.about_long), R.drawable.ic_action_about));
         mNavItems.add(new NavItem(getString(R.string.sync_data), getString(R.string.sync_data_long), R.drawable.ic_action_refresh));
+        mNavItems.add(new NavItem(getString(R.string.odjava), getString(R.string.odjava_sa_sistema), R.drawable.ic_action_new));
+
     }
 
     @Override
