@@ -73,7 +73,6 @@
             android:id="@+id/text_view_prikazi_ime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:paddingTop="3mm"
             android:text="@string/prikazi_ime"
             android:textStyle="normal"
