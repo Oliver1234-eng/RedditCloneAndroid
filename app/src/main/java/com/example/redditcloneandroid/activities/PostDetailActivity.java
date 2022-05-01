@@ -1,6 +1,9 @@
 package com.example.redditcloneandroid.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,5 +27,16 @@ public class PostDetailActivity extends AppCompatActivity {
         tvCommunity.setText(getIntent().getStringExtra("community"));
         tvTitle.setText(getIntent().getStringExtra("title"));
         tvText.setText(getIntent().getStringExtra("text"));
+
+        Button prijaviSadrzaj = (Button) findViewById(R.id.prijavi_neprikladan_sadrzaj_button);
+        prijaviSadrzaj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(PostDetailActivity.this, ReportPostActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -74,4 +74,47 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <RadioGroup
+        android:id="@+id/radioGroupPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvText">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/svidja_mi_se" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ne_svidja_mi_se" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poseti_zajednicu_button"
+        android:text="@string/pregledaj_komentare_button"
+        android:id="@+id/pregledaj_komentare_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupPosts"
+        android:text="@string/poseti_zajednicu_button"
+        android:id="@+id/poseti_zajednicu_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregledaj_komentare_button"
+        android:text="@string/prijavi_neprikladan_sadrzaj"
+        android:id="@+id/prijavi_neprikladan_sadrzaj_button"/>
+
+
 </RelativeLayout>

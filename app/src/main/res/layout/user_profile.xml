@@ -337,5 +337,37 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/kreiranje_objave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kreiranje_objave_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kreiranje_objave"
+            android:backgroundTint="@color/gray"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kreiranje_zajednice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kreiranje_zajednice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kreiranje_zajednice"
+            android:backgroundTint="@color/gray"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
 </LinearLayout>
 </ScrollView>

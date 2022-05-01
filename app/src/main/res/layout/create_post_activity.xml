@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/registration_window"
+        tools:context=".activities.CreatePostActivity"
+        android:background="@color/pozadina">
+
+        <LinearLayout
+            android:id="@+id/kreiranje_nove_objave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/text_view_kreiranje_nove_objave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/kreiranje_objave"
+                android:textStyle="bold"
+                android:textColor="@color/tekst"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_title_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/naslov_objave"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_title_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/naslov_objave_dva"
+                android:paddingLeft="100sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_text_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/tekst_objave"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_text_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/tekst_objave_dva"
+                android:paddingLeft="113sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/avatar_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_avatar_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avatar"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:paddingRight="5mm"/>
+
+            <Button
+                android:id="@+id/button_avatar_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/avatar_button" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registration_date_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/datum_registracije"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"
+                android:paddingRight="14mm"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/datum_registracije_button"
+                android:onClick="setDate"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registration_date_registration_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/datum_registracije_odabrani"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/selektovani_datum"
+                android:textStyle="normal"
+                android:paddingLeft="5mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_community_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/naziv_zajednice"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5mm"
+                android:layout_marginTop="4mm"
+                android:layout_marginLeft="10mm"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submit_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/create_post_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kreiranje_objave"
+                android:layout_marginTop="5mm"
+                android:backgroundTint="@color/gray"/>
+
+            <Button
+                android:id="@+id/create_post_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odustani"
+                android:layout_marginTop="5mm"
+                android:backgroundTint="@color/gray"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -65,5 +65,27 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
+        Button promeniLozinku = (Button) findViewById(R.id.button_promeni_lozinku);
+        promeniLozinku.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, ChangePasswordActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button kreiranjeObjave = (Button) findViewById(R.id.kreiranje_objave_button);
+        kreiranjeObjave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, CreatePostActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }

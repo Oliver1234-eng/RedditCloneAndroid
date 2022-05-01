@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/login_window"
+    tools:context=".activities.ReportPostActivity"
+    android:background="@color/pozadina">
+
+    <LinearLayout
+        android:id="@+id/dobrodosli_prijava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_view_login_dobrodosli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="5mm"
+            android:text="@string/prijavi_sadrzaj"
+            android:textStyle="bold"
+            android:textColor="@color/tekst"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dugacak_tekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_view_login_prijava"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="4mm"
+            android:paddingTop="10mm"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:text="Hvala Vam sto pazite na sebe i ostale korisnike projavljivanjem stvari koje krše pravila. Javite nam sta se desava, pa cemo to ispitati."
+            android:textColor="@color/tekst"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_jedan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/krsenje_pravila"/>
+
+        <CheckBox
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17mm"
+            android:layout_marginTop="2mm"
+            android:layout_marginRight="10mm"
+            android:text="@string/lazno_predstavljanje" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_dva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/uznemiravanje"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/krsenje_autorskih_prava"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_tri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/mrznja"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/krsenje_ziga"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_cetiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/deljenje_licnih_podataka"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/nezeljen_sadrzaj"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/samo"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:text="@string/drugo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/prijavi_neprikladan_sadrzaj_button_post_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prijavi_sadrzaj_button"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/gray"/>
+
+        <Button
+            android:id="@+id/odustani_button_prijava_neprikladnog_sadrzaja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/odustani"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>
