@@ -1,6 +1,7 @@
 package com.example.redditcloneandroid.tools;
 
 import com.example.redditcloneandroid.R;
+import com.example.redditcloneandroid.model.Comment;
 import com.example.redditcloneandroid.model.Post;
 import com.example.redditcloneandroid.model.User;
 
@@ -33,5 +34,18 @@ public class Mokap {
         users.add(u3);
 
         return users;
+    }
+
+    public static List<Comment> getComments() {
+        ArrayList<Comment> comments = new ArrayList<Comment>();
+        Comment c1 = new Comment("tekst komentara 1", "01.05.2022.");
+        Comment c2 = new Comment("tekst komentara 2", "02.05.2022.");
+        Comment c3 = new Comment("tekst komentara 3", "03.05.2022.");
+
+        comments.add(c1);
+        comments.add(c2);
+        comments.add(c3);
+
+        return comments;
     }
 }

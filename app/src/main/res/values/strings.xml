@@ -140,4 +140,11 @@
     <string name="slika_objave">Slika:</string>
     <string name="slika_objave_dva">Odaberi sliku</string>
     <string name="naziv_zajednice">Zajednica:</string>
+    <string name="ime_zajednice_create">Ime:</string>
+    <string name="ime_zajednice_create_dva">Ime</string>
+    <string name="opis_zajednice">Opis:</string>
+    <string name="opis_zajednice_dva">Opis</string>
+    <string name="pravila_zajednice">Pravila:</string>
+    <string name="pravila_zajednice_dva">Pravila</string>
+    <string name="kreiranje_zajednice_create">Kreiraj zajednicu</string>
 </resources>

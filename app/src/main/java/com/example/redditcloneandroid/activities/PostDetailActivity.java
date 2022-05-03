@@ -38,5 +38,16 @@ public class PostDetailActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button pregledajKomentare = (Button) findViewById(R.id.pregledaj_komentare_button);
+        pregledajKomentare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(PostDetailActivity.this, MainPageActivityComment.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

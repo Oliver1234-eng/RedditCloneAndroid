@@ -1,6 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/create_community_window"
+        tools:context=".activities.CreateCommunityActivity"
+        android:background="@color/pozadina">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/kreiranje_nove_zajednice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/text_view_kreiranje_nove_zajednice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/kreiranje_zajednice_create"
+                android:textStyle="bold"
+                android:textColor="@color/tekst"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_name_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/ime_zajednice_create"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_name_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/ime_zajednice_create_dva"
+                android:paddingLeft="130sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_description_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/opis_zajednice"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_description_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/opis_zajednice_dva"
+                android:paddingLeft="121sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registration_date_registration_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/datum_registracije"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"
+                android:paddingRight="14mm"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/datum_registracije_button"
+                android:onClick="setDate"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registration_date_registration_community_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/datum_registracije_odabrani"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/selektovani_datum"
+                android:textStyle="normal"
+                android:paddingLeft="5mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_rules_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/pravila_zajednice"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_rules_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/pravila_zajednice_dva"
+                android:paddingLeft="100sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submit_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/create_community_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kreiranje_zajednice"
+                android:layout_marginTop="5mm"
+                android:backgroundTint="@color/gray"/>
+
+            <Button
+                android:id="@+id/create_community_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odustani"
+                android:layout_marginTop="5mm"
+                android:backgroundTint="@color/gray"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
