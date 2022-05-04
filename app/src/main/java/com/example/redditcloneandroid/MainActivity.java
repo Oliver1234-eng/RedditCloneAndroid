@@ -15,6 +15,10 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+    //provera da li aplikacija radi
+    //potrebno jos uraditi dodavanje flairs, dodavanje pravila i stvari oko komentara
+    //do kontrolne tacke
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
