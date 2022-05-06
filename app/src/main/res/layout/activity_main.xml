@@ -119,7 +119,7 @@
             android:layout_height="wrap_content"
             android:text="@string/prijava_dugme"
             android:layout_marginTop="5mm"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/yellow"/>
 
 
     </LinearLayout>

@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/azuriraj_listu_pravila"
                 android:layout_marginTop="5mm"
-                android:backgroundTint="@color/gray"/>
+                android:backgroundTint="@color/yellow"/>
 
             <Button
                 android:id="@+id/create_rules_button_cancel"
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/odustani"
                 android:layout_marginTop="5mm"
-                android:backgroundTint="@color/gray"/>
+                android:backgroundTint="@color/yellow"/>
 
 
         </LinearLayout>

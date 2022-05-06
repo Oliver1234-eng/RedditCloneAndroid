@@ -49,5 +49,16 @@ public class PostDetailActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button posetiZajednicu = (Button) findViewById(R.id.poseti_zajednicu_button);
+        posetiZajednicu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(PostDetailActivity.this, MainPageActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

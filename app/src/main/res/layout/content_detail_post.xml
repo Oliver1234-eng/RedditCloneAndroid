@@ -100,14 +100,24 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/radioGroupPosts"
         android:text="@string/pregledaj_komentare_button"
-        android:id="@+id/pregledaj_komentare_button"/>
+        android:id="@+id/pregledaj_komentare_button"
+        android:backgroundTint="@color/yellow"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pregledaj_komentare_button"
         android:text="@string/prijavi_neprikladan_sadrzaj"
-        android:id="@+id/prijavi_neprikladan_sadrzaj_button"/>
+        android:id="@+id/prijavi_neprikladan_sadrzaj_button"
+        android:backgroundTint="@color/yellow" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prijavi_neprikladan_sadrzaj_button"
+        android:text="@string/poseti_zajednicu_button"
+        android:id="@+id/poseti_zajednicu_button"
+        android:backgroundTint="@color/yellow"/>
 
 
 </RelativeLayout>

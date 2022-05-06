@@ -174,7 +174,7 @@
             android:layout_height="wrap_content"
             android:text="@string/prijavi_sadrzaj_button"
             android:layout_marginTop="5mm"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/yellow"/>
 
         <Button
             android:id="@+id/odustani_button_prijava_neprikladnog_sadrzaja"
@@ -182,7 +182,7 @@
             android:layout_height="wrap_content"
             android:text="@string/odustani"
             android:layout_marginTop="5mm"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/yellow"/>
 
     </LinearLayout>
 

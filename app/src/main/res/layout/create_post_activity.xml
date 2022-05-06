@@ -108,7 +108,7 @@
                 android:id="@+id/button_avatar_registration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/gray"
+                android:backgroundTint="@color/yellow"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
                 android:text="@string/avatar_button" />
@@ -140,7 +140,7 @@
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/gray"
+                android:backgroundTint="@color/yellow"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
                 android:text="@string/datum_registracije_button"
@@ -224,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/kreiranje_objave"
                 android:layout_marginTop="5mm"
-                android:backgroundTint="@color/gray"/>
+                android:backgroundTint="@color/yellow"/>
 
             <Button
                 android:id="@+id/create_post_button_cancel"
@@ -232,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/odustani"
                 android:layout_marginTop="5mm"
-                android:backgroundTint="@color/gray"/>
+                android:backgroundTint="@color/yellow"/>
 
 
         </LinearLayout>

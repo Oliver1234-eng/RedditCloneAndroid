@@ -79,13 +79,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/radioGroupComments"
         android:text="@string/reply_comment"
-        android:id="@+id/odgovori_na_komentar_button"/>
+        android:id="@+id/odgovori_na_komentar_button"
+        android:background="@color/yellow"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/odgovori_na_komentar_button"
         android:text="@string/prijavi_komentar"
-        android:id="@+id/prijavi_neprikladan_komentar_button"/>
+        android:id="@+id/prijavi_neprikladan_komentar_button"
+        android:backgroundTint="@color/yellow"/>
 
 </RelativeLayout>

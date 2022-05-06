@@ -54,10 +54,10 @@
             android:id="@+id/button_promeni_lozinku"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:text="@string/promeni_lozinku_dva" />
+            android:text="@string/promeni_lozinku_dva"/>
 
 
     </LinearLayout>
@@ -176,7 +176,7 @@
             android:id="@+id/button_avatar_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:text="@string/avatar_button"/>
@@ -197,7 +197,7 @@
             android:layout_height="wrap_content"
             android:text="@string/sacuvaj_izmene_button"
             android:layout_marginTop="5mm"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/yellow"/>
 
         <Button
             android:id="@+id/cancel_button_profile"
@@ -205,7 +205,7 @@
             android:layout_height="wrap_content"
             android:text="@string/odustani_button"
             android:layout_marginTop="5mm"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/yellow"/>
 
     </LinearLayout>
 
@@ -240,7 +240,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/suspendovanje_zajednice"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
 
@@ -257,7 +257,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/uklanjanje_moderatora"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
 
@@ -294,7 +294,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/blokiranje_korisnika"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
 
@@ -311,7 +311,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/spisak_neprikladnog_sadrzaja"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
 
@@ -328,7 +328,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/azuriraj_listu_pravila"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
 
@@ -345,7 +345,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dodaj_novi_tag"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
 
@@ -382,7 +382,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/kreiranje_objave"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
     </LinearLayout>
@@ -398,7 +398,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/kreiranje_zajednice"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
     </LinearLayout>

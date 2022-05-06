@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/pozadina">
     <!-- tools:context=".activities.MainPageActivity" -->
 
     <TableLayout
@@ -15,7 +16,7 @@
         <!-- Table Heading -->
 
         <TableRow
-            android:background="@color/colorGreen">
+            android:background="@color/tabela">
 
             <TextView
                 android:layout_width="0dp"
