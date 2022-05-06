@@ -147,4 +147,14 @@
     <string name="pravila_zajednice">Pravila:</string>
     <string name="pravila_zajednice_dva">Pravila</string>
     <string name="kreiranje_zajednice_create">Kreiraj zajednicu</string>
+    <string name="reply_comment">Odgovori na komentar</string>
+    <string name="prijavi_komentar">Prijavi ovaj komentar</string>
+    <string name="dodavanje_novog_taga">Dodaj novi tag</string>
+    <string name="tag">Naziv taga:</string>
+    <string name="tag_dva">Naziv taga</string>
+    <string name="kreiraj_tag">Kreiraj tag</string>
+    <string name="dodaj_novi_tag">Dodaj novi tag</string>
+    <string name="azuriraj_listu_pravila">Azuriraj listu pravila</string>
+    <string name="lista_pravila">Lista pravila:</string>
+    <string name="lista_pravila_dva">Lista pravila</string>
 </resources>

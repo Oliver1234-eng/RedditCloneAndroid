@@ -318,6 +318,40 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/azuriranje_liste_pravila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/azuriranje_liste_pravila_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/azuriraj_listu_pravila"
+            android:backgroundTint="@color/gray"
+            android:layout_marginLeft="3mm"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dodavanje_novog_taga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dodavanje_novog_taga_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dodaj_novi_tag"
+            android:backgroundTint="@color/gray"
+            android:layout_marginLeft="3mm"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/deo_za_korisnika"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/registration_window"
+        tools:context=".activities.UpdateListOfRulesActivity"
+        android:background="@color/pozadina">
+
+        <LinearLayout
+            android:id="@+id/azuriranje_liste_pravila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/text_view_kreiranje_nove_objave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="3mm"
+                android:text="@string/azuriraj_listu_pravila"
+                android:textStyle="bold"
+                android:textColor="@color/tekst"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_lista_pravila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/lista_pravila"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_lista_pravila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/lista_pravila_dva"
+                android:paddingLeft="100sp"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_community_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5mm"
+                android:text="@string/naziv_zajednice"
+                android:textStyle="normal"
+                android:paddingLeft="3mm"
+                android:textColor="@color/tekst"
+                android:textSize="23dp"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5mm"
+                android:layout_marginTop="4mm"
+                android:layout_marginLeft="10mm"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submit_list_of_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/create_rules_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/azuriraj_listu_pravila"
+                android:layout_marginTop="5mm"
+                android:backgroundTint="@color/gray"/>
+
+            <Button
+                android:id="@+id/create_rules_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odustani"
+                android:layout_marginTop="5mm"
+                android:backgroundTint="@color/gray"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>

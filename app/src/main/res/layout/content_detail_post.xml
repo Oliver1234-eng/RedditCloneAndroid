@@ -98,16 +98,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/poseti_zajednicu_button"
+        android:layout_below="@id/radioGroupPosts"
         android:text="@string/pregledaj_komentare_button"
         android:id="@+id/pregledaj_komentare_button"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/radioGroupPosts"
-        android:text="@string/poseti_zajednicu_button"
-        android:id="@+id/poseti_zajednicu_button"/>
 
     <Button
         android:layout_width="wrap_content"

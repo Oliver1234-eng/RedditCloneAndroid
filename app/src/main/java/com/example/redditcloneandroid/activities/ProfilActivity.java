@@ -98,5 +98,27 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
+        Button dodavanjeNovogTaga = (Button) findViewById(R.id.dodavanje_novog_taga_button);
+        dodavanjeNovogTaga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, AddNewFlairsActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button azuriranjeListePravila = (Button) findViewById(R.id.azuriranje_liste_pravila_button);
+        azuriranjeListePravila.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, UpdateListOfRulesActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }
