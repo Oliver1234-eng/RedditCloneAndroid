@@ -33,14 +33,6 @@ public class CreateCommunityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_community_activity);
 
-        dateView = (TextView) findViewById(R.id.textView3);
-        calendar = Calendar.getInstance();
-        year = calendar.get(Calendar.YEAR);
-
-        month = calendar.get(Calendar.MONTH);
-        day = calendar.get(Calendar.DAY_OF_MONTH);
-        showDate(year, month+1, day);
-
         Button kreirajZajednicu = (Button) findViewById(R.id.create_community_button);
         kreirajZajednicu.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -131,12 +131,13 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/link_do_registracije"
+        <Button
+            android:id="@+id/window_registration_login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/registruj_se"
-            android:paddingTop="2.5mm"/>
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/yellow"/>
 
 
     </LinearLayout>
@@ -148,12 +149,13 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/link_do_gosta"
+        <Button
+            android:id="@+id/window_guest_login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gost"
-            android:paddingTop="2.5mm"/>
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/yellow"/>
 
 
     </LinearLayout>

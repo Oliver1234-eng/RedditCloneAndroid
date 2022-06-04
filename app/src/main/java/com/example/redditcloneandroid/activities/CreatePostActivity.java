@@ -34,14 +34,6 @@ public class CreatePostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_post_activity);
 
-        dateView = (TextView) findViewById(R.id.textView3);
-        calendar = Calendar.getInstance();
-        year = calendar.get(Calendar.YEAR);
-
-        month = calendar.get(Calendar.MONTH);
-        day = calendar.get(Calendar.DAY_OF_MONTH);
-        showDate(year, month+1, day);
-
         Spinner dropdown = findViewById(R.id.spinner1);
         String[] items = new String[]{"zajednica1", "zajednica2", "zajednica3"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);

@@ -34,29 +34,19 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration_activity);
 
-        dateView = (TextView) findViewById(R.id.textView3);
-        calendar = Calendar.getInstance();
-        year = calendar.get(Calendar.YEAR);
-
-        month = calendar.get(Calendar.MONTH);
-        day = calendar.get(Calendar.DAY_OF_MONTH);
-        showDate(year, month+1, day);
-
-        TextView textView = (TextView) findViewById(R.id.link_do_prijave);
-        textView.setOnClickListener(new View.OnClickListener() {
+        Button buttonRegistracija = (Button) findViewById(R.id.submit_button_registration);
+        buttonRegistracija.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
-
                 startActivity(intent);
+                successMessage();
             }
         });
 
-
-
-        Button button = (Button) findViewById(R.id.submit_button_registration);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button buttonLinkDoLogina = (Button) findViewById(R.id.window_login_button_registration);
+        buttonLinkDoLogina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

@@ -15,14 +15,13 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    //aplikacija testirana preko fizickog uredjaja (mobilni telefon)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textView = (TextView) findViewById(R.id.link_do_registracije);
-        textView.setOnClickListener(new View.OnClickListener() {
+        Button button1 = (Button) findViewById(R.id.window_registration_login_button);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -32,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView textView2 = (TextView) findViewById(R.id.link_do_gosta);
-        textView2.setOnClickListener(new View.OnClickListener() {
+        Button button2 = (Button) findViewById(R.id.window_guest_login_button);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -43,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button = (Button) findViewById(R.id.submit_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button3 = (Button) findViewById(R.id.submit_button);
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

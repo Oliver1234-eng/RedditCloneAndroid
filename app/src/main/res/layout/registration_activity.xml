@@ -168,71 +168,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/registration_date_registration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:text="@string/datum_registracije"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:paddingRight="14mm"/>
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/yellow"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:text="@string/datum_registracije_button"
-            android:onClick="setDate"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/registration_date_registration_selected"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:text="@string/datum_registracije_odabrani"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"/>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:text="@string/selektovani_datum"
-            android:textStyle="normal"
-            android:paddingLeft="5mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/submit_registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -257,12 +192,13 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/link_do_prijave"
+        <Button
+            android:id="@+id/window_login_button_registration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/prijavi_se"
-            android:paddingTop="2.5mm"/>
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/yellow"/>
 
 
     </LinearLayout>
