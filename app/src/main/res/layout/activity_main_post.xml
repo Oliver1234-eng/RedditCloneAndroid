@@ -46,6 +46,15 @@
                 android:layout_marginTop="70mm"
                 android:backgroundTint="@color/yellow"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/odjava_dugme"
+                android:text="Odjavi se"
+                android:layout_marginTop="70mm"
+                android:backgroundTint="@color/yellow"
+                android:layout_marginLeft="15mm"/>
+
         </RelativeLayout>
 
         <!-- The navigation drawer -->

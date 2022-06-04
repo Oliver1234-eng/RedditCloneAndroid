@@ -157,4 +157,6 @@
     <string name="azuriraj_listu_pravila">Azuriraj listu pravila</string>
     <string name="lista_pravila">Lista pravila:</string>
     <string name="lista_pravila_dva">Lista pravila</string>
+    <string name="prijava_kao_administrator">Prijavite se kao administrator</string>
+    <string name="prijava_kao_korisnik">Prijavite se kao korisnik</string>
 </resources>

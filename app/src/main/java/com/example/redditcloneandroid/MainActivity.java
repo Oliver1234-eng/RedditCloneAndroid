@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.redditcloneandroid.activities.MainActivityAdministrator;
+import com.example.redditcloneandroid.activities.MainActivityModerator;
 import com.example.redditcloneandroid.activities.MainPageActivity;
 import com.example.redditcloneandroid.activities.RegistrationActivity;
 
@@ -20,8 +22,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = (Button) findViewById(R.id.window_registration_login_button);
+        Button button1 = (Button) findViewById(R.id.prijava_kao_administrator_dugme);
         button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityAdministrator.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button2 = (Button) findViewById(R.id.prijava_kao_korisnik_dugme);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityModerator.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button3 = (Button) findViewById(R.id.window_registration_login_button);
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -31,19 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = (Button) findViewById(R.id.window_guest_login_button);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button button3 = (Button) findViewById(R.id.submit_button);
-        button3.setOnClickListener(new View.OnClickListener() {
+        Button button4 = (Button) findViewById(R.id.window_guest_login_button);
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

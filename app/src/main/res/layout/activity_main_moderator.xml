@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/login_window"
-    tools:context=".MainActivity"
+    android:id="@+id/login_window_korisnik"
+    tools:context=".activities.MainActivityModerator"
     android:background="@color/pozadina">
 
     <LinearLayout
-        android:id="@+id/dobrodosli_prijava"
+        android:id="@+id/dobrodosli_prijava_korisnik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
         <TextView
-            android:id="@+id/text_view_login_dobrodosli"
+            android:id="@+id/text_view_login_dobrodosli_korisnik"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -30,19 +30,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/prijava"
+        android:id="@+id/prijava_korisnik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
         <TextView
-            android:id="@+id/text_view_login_prijava"
+            android:id="@+id/text_view_login_prijava_korisnik"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingTop="10mm"
-            android:text="@string/prijava"
+            android:text="@string/prijava_kao_korisnik"
             android:textStyle="bold"
             android:textColor="@color/tekst"
             android:textSize="30dp" />
@@ -50,74 +50,87 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/prijava_kao_administrator"
+        android:id="@+id/username_korisnik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_margin="5dp">
 
-        <Button
-            android:id="@+id/prijava_kao_administrator_dugme"
+        <TextView
+            android:id="@+id/text_view_username_korisnik"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prijavi se kao administrator"
-            android:layout_marginTop="5mm"
-            android:backgroundTint="@color/yellow"/>
+            android:gravity="center"
+            android:paddingTop="10mm"
+            android:text="@string/korisnicko_ime"
+            android:textStyle="normal"
+            android:paddingLeft="3mm"
+            android:textColor="@color/tekst"
+            android:textSize="23dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_username_korisnik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/korisnicko_ime_hint"
+            android:paddingLeft="25sp"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/prijava_kao_korisnik"
+        android:id="@+id/password_korisnik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_margin="5dp">
 
-        <Button
-            android:id="@+id/prijava_kao_korisnik_dugme"
+        <TextView
+            android:id="@+id/text_view_password_korisnik"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prijavi se kao korisnik"
-            android:layout_marginTop="5mm"
-            android:backgroundTint="@color/yellow"/>
+            android:gravity="center"
+            android:paddingTop="3mm"
+            android:text="@string/lozinka"
+            android:textStyle="normal"
+            android:paddingLeft="3mm"
+            android:textColor="@color/tekst"
+            android:textSize="23dp"/>
 
+        <EditText
+            android:id="@+id/edit_text_password_korisnik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/lozinka_hint"
+            android:paddingLeft="100sp"
+            android:inputType="textPassword"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/registruj_se"
+        android:id="@+id/submit_korisnik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
         <Button
-            android:id="@+id/window_registration_login_button"
+            android:id="@+id/login_button_korisnik"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/registruj_se"
+            android:text="@string/prijava_dugme"
             android:layout_marginTop="5mm"
             android:backgroundTint="@color/yellow"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/gost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
 
         <Button
-            android:id="@+id/window_guest_login_button"
+            android:id="@+id/back_to_first_page_korisnik"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gost"
+            android:text="Nazad"
             android:layout_marginTop="5mm"
             android:backgroundTint="@color/yellow"/>
 
 
     </LinearLayout>
+
 
 </LinearLayout>

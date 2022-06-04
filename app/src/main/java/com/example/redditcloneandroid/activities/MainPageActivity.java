@@ -45,12 +45,23 @@ public class MainPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_post);
 
-        Button button = (Button) findViewById(R.id.profil_dugme);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button1 = (Button) findViewById(R.id.profil_dugme);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainPageActivity.this, ProfilActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button2 = (Button) findViewById(R.id.odjava_dugme);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainPageActivity.this, MainActivity.class);
 
                 startActivity(intent);
             }
