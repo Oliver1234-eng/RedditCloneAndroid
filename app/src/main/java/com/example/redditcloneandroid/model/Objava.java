@@ -1,27 +1,19 @@
 package com.example.redditcloneandroid.model;
 
-import com.google.gson.annotations.SerializedName;
 
 public class Objava {
 
-    @SerializedName("id")
     private Long id;
-
-    @SerializedName("title")
     private String title;
-
-    @SerializedName("text")
     private String text;
-
-    @SerializedName("community")
     private String community;
 
-    public Objava(Long id, String title, String text, String community) {
-        this.id = id;
-        this.title = title;
-        this.text = text;
-        this.community = community;
-    }
+    //public Objava(Long id, String title, String text, String community) {
+        //this.id = id;
+        //this.title = title;
+        //this.text = text;
+        //this.community = community;
+    //}
 
     public Long getId() {
         return id;
@@ -53,5 +45,15 @@ public class Objava {
 
     public void setCommunity(String community) {
         this.community = community;
+    }
+
+    @Override
+    public String toString() {
+        return "Objava{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", text='" + text + '\'' +
+                ", community='" + community + '\'' +
+                '}';
     }
 }

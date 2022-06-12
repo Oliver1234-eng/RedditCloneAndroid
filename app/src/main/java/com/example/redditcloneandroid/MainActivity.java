@@ -12,6 +12,8 @@ import com.example.redditcloneandroid.activities.MainActivityAdministrator;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
 import com.example.redditcloneandroid.activities.MainPageActivity;
 import com.example.redditcloneandroid.activities.RegistrationActivity;
+import com.example.redditcloneandroid.activities.UserForm;
+import com.example.redditcloneandroid.activities.UserListActivity;
 
 import org.w3c.dom.Text;
 
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, RegistrationActivity.class);
+                Intent intent = new Intent(MainActivity.this, UserForm.class);
 
                 startActivity(intent);
             }

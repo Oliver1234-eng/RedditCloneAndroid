@@ -1,32 +1,24 @@
 package com.example.redditcloneandroid.model;
 
-import com.google.gson.annotations.SerializedName;
 
 public class Korisnik {
 
-    @SerializedName("id")
     private Long id;
-
-    @SerializedName("username")
     private String username;
-
-    @SerializedName("password")
     private String password;
-
-    @SerializedName("email")
     private String email;
 
-    public Korisnik(Long id, String username, String password, String email) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-    }
+    //public Korisnik(Long id, String username, String password, String email) {
+        //this.id = id;
+        //this.username = username;
+        //this.password = password;
+        //this.email = email;
+    //}
 
-    public Korisnik(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+    //public Korisnik(String username, String password) {
+        //this.username = username;
+        //this.password = password;
+    //}
 
     public Long getId() {
         return id;
@@ -58,5 +50,15 @@ public class Korisnik {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Korisnik{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
