@@ -23,7 +23,7 @@ public class Mokap {
         return posts;
     }
 
-    public static List<User> getUsers() {
+    /*public static List<User> getUsers() {
         ArrayList<User> users = new ArrayList<User>();
         User u1 = new User("Pera", "Peric", "pera@gmail.com");
         User u2 = new User("Mika", "Mikic", "mika@gmail.com");
@@ -34,7 +34,7 @@ public class Mokap {
         users.add(u3);
 
         return users;
-    }
+    }*/
 
     public static List<Comment> getComments() {
         ArrayList<Comment> comments = new ArrayList<Comment>();

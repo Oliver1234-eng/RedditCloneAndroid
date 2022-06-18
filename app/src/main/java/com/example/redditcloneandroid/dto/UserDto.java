@@ -1,31 +1,19 @@
-package com.example.redditcloneandroid.model;
+package com.example.redditcloneandroid.dto;
 
-import java.io.Serializable;
+public class UserDto {
 
-public class User implements Serializable {
-
-    private int id;
     private String username;
     private String password;
     private String email;
 
-    public User() {
+    public UserDto() {
 
     }
 
-    public User(int id, String username, String password, String email) {
+    public UserDto(String username, String password, String email) {
         this.username = username;
         this.password = password;
         this.email = email;
-        this.id = id;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getUsername() {
@@ -50,15 +38,5 @@ public class User implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                '}';
     }
 }

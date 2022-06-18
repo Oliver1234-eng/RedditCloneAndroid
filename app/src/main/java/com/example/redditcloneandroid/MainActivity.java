@@ -8,9 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.redditcloneandroid.activities.CreateUserActivity;
 import com.example.redditcloneandroid.activities.MainActivityAdministrator;
+import com.example.redditcloneandroid.activities.MainActivityCommunities;
 import com.example.redditcloneandroid.activities.MainActivityKt;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
+import com.example.redditcloneandroid.activities.MainActivityUsers;
 import com.example.redditcloneandroid.activities.MainPageActivity;
 import com.example.redditcloneandroid.activities.RegistrationActivity;
 import com.example.redditcloneandroid.activities.UserForm;
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, MainActivityAdministrator.class);
+                Intent intent = new Intent(MainActivity.this, MainActivityCommunities.class);
 
                 startActivity(intent);
             }
@@ -52,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, MainActivityModerator.class);
-
+                Intent intent = new Intent(MainActivity.this, MainActivityUsers.class);
+                //Intent intent = new Intent(MainActivity.this, CreateUserActivity.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, UserForm.class);
+                Intent intent = new Intent(MainActivity.this, CreateUserActivity.class);
 
                 startActivity(intent);
             }

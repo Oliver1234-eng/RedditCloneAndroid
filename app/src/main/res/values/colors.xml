@@ -20,4 +20,8 @@
     <color name="colorGreen">#96c896</color>
     <color name="yellow">#ffff66</color>
     <color name="tabela">#008fb3</color>
+    <color name="green">#43A047</color>
+    <color name="green2">#7CB342</color>
+    <color name="yelloww">#F0D835</color>
+    <color name="red">#E53935</color>
 </resources>

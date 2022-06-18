@@ -20,10 +20,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.adapters.DrawerListAdapter;
 import com.example.redditcloneandroid.fragments.CommentFragment;
-import com.example.redditcloneandroid.fragments.UserFragment;
 import com.example.redditcloneandroid.model.NavItem;
 import com.example.redditcloneandroid.tools.FragmentTransitionComment;
-import com.example.redditcloneandroid.tools.FragmentTransitionUser;
 
 import java.util.ArrayList;
 

@@ -69,11 +69,6 @@
         </activity>
 
         <activity
-            android:name=".activities.MainPageActivityUser"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity
             android:name=".activities.UserDetailActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -168,6 +163,39 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <activity
+            android:name=".activities.MainActivityUsers"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreateUserActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityUser"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditUserActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityCommunity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityCommunities"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreateCommunitiesActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditCommunityActivity"
+            android:label="@string/app_name"/>
+
 
     </application>
 
