@@ -24,14 +24,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Email" />
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/form_textFieldLozinka"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Lozinka" />
+            android:hint="Lozinka"
+            android:inputType="textPassword"/>
     </LinearLayout>
 
     <Button

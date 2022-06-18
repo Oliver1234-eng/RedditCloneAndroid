@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.redditcloneandroid.activities.MainActivityAdministrator;
+import com.example.redditcloneandroid.activities.MainActivityKt;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
 import com.example.redditcloneandroid.activities.MainPageActivity;
 import com.example.redditcloneandroid.activities.RegistrationActivity;
@@ -23,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button button5 = (Button) findViewById(R.id.prijava_kt_dugme);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityKt.class);
+
+                startActivity(intent);
+            }
+        });
 
         Button button1 = (Button) findViewById(R.id.prijava_kao_administrator_dugme);
         button1.setOnClickListener(new View.OnClickListener() {
