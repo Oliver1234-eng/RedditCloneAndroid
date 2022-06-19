@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Mokap {
 
-    public static List<Post> getPosts(){
+    /*public static List<Post> getPosts(){
         ArrayList<Post> posts = new ArrayList<Post>();
         Post p1 = new Post("jedna zajednica", "Objava1", "Ovo je teskt objave", -1);
         Post p2 = new Post("jedna zajednica", "Objava2", "Ovo je tekst objave", R.drawable.about);
@@ -21,7 +21,7 @@ public class Mokap {
         posts.add(p3);
 
         return posts;
-    }
+    }*/
 
     /*public static List<User> getUsers() {
         ArrayList<User> users = new ArrayList<User>();
@@ -36,7 +36,7 @@ public class Mokap {
         return users;
     }*/
 
-    public static List<Comment> getComments() {
+    /*public static List<Comment> getComments() {
         ArrayList<Comment> comments = new ArrayList<Comment>();
         Comment c1 = new Comment("tekst komentara 1", "01.05.2022.");
         Comment c2 = new Comment("tekst komentara 2", "02.05.2022.");
@@ -47,5 +47,5 @@ public class Mokap {
         comments.add(c3);
 
         return comments;
-    }
+    }*/
 }

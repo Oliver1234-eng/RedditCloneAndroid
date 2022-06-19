@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -23,13 +22,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.adapters.DrawerListAdapter;
-import com.example.redditcloneandroid.fragments.PostFragment;
 import com.example.redditcloneandroid.model.NavItem;
-import com.example.redditcloneandroid.model.Post;
 import com.example.redditcloneandroid.tools.FragmentTransition;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class MainPageActivity extends AppCompatActivity {
 
@@ -156,7 +152,7 @@ public class MainPageActivity extends AppCompatActivity {
 
     private void selectItemFromDrawer(int position) {
         if(position == 0){
-            FragmentTransition.to(PostFragment.newInstance(), this, false);
+            //FragmentTransition.to(PostFragment.newInstance(), this, false);
         }else if(position == 1){
             //..
         }else if(position == 2){

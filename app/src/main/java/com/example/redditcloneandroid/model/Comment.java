@@ -1,40 +1,53 @@
 package com.example.redditcloneandroid.model;
 
-public class Comment {
+import java.io.Serializable;
 
-    private String tekst;
-    private String datum;
+public class Comment implements Serializable {
+
+    private int id;
+    private String reply;
+    private int post;
 
     public Comment() {
 
     }
 
-    public Comment(String tekst, String datum) {
-        this.tekst = tekst;
-        this.datum = datum;
+    public Comment(int id, String reply, int post) {
+        this.id = id;
+        this.reply = reply;
+        this.post = post;
     }
 
-    public String getTekst() {
-        return tekst;
+    public int getId() {
+        return id;
     }
 
-    public void setTekst(String tekst) {
-        this.tekst = tekst;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getDatum() {
-        return datum;
+    public String getReply() {
+        return reply;
     }
 
-    public void setDatum(String datum) {
-        this.datum = datum;
+    public void setReply(String reply) {
+        this.reply = reply;
+    }
+
+    public int getPost() {
+        return post;
+    }
+
+    public void setPost(int post) {
+        this.post = post;
     }
 
     @Override
     public String toString() {
         return "Comment{" +
-                "tekst='" + tekst + '\'' +
-                ", datum='" + datum + '\'' +
+                "id=" + id +
+                ", reply='" + reply + '\'' +
+                ", post=" + post +
                 '}';
     }
 }

@@ -1,27 +1,31 @@
 package com.example.redditcloneandroid.model;
 
-public class Post {
+import java.io.Serializable;
 
-    private String community;
+public class Post implements Serializable {
+
+    private int id;
     private String title;
     private String text;
-    private int avatar;
+    private int community;
 
     public Post() {
 
     }
 
-    public Post(String community, String title, String text, int avatar) {
-        this.community = community;
+    public Post(int id, String title, String text, int community) {
+        this.id = id;
         this.title = title;
         this.text = text;
-        this.avatar = avatar;
+        this.community = community;
     }
 
-    public String getCommunity() {return community;}
+    public int getId() {
+        return id;
+    }
 
-    public void setCommunity(String community) {
-        this.community = community;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -40,21 +44,21 @@ public class Post {
         this.text = text;
     }
 
-    public int getAvatar() {
-        return avatar;
+    public int getCommunity() {
+        return community;
     }
 
-    public void setAvatar(int avatar) {
-        this.avatar = avatar;
+    public void setCommunity(int community) {
+        this.community = community;
     }
 
     @Override
     public String toString() {
         return "Post{" +
-                "community='" + community + '\'' +
-                "title='" + title + '\'' +
+                "id=" + id +
+                ", title='" + title + '\'' +
                 ", text='" + text + '\'' +
-                ", avatar=" + avatar +
+                ", community=" + community +
                 '}';
     }
 }

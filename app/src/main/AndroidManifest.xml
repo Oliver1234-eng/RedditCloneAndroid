@@ -196,6 +196,38 @@
             android:name=".activities.EditCommunityActivity"
             android:label="@string/app_name"/>
 
+        <activity
+            android:name=".activities.CreatePostsActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityPost"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityPost"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditPostActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreateCommentActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityComment"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityComment"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditCommentActivity"
+            android:label="@string/app_name"/>
+
 
     </application>
 

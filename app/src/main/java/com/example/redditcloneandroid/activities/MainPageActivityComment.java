@@ -19,7 +19,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.adapters.DrawerListAdapter;
-import com.example.redditcloneandroid.fragments.CommentFragment;
 import com.example.redditcloneandroid.model.NavItem;
 import com.example.redditcloneandroid.tools.FragmentTransitionComment;
 
@@ -128,7 +127,7 @@ public class MainPageActivityComment extends AppCompatActivity {
 
     private void selectItemFromDrawer(int position) {
         if(position == 0){
-            FragmentTransitionComment.to(CommentFragment.newInstance(), this, false);
+            //FragmentTransitionComment.to(CommentFragment.newInstance(), this, false);
         }else if(position == 1){
             //..
         }else if(position == 2){

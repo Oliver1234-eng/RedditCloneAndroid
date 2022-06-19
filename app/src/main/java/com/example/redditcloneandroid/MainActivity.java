@@ -10,9 +10,11 @@ import android.widget.TextView;
 
 import com.example.redditcloneandroid.activities.CreateUserActivity;
 import com.example.redditcloneandroid.activities.MainActivityAdministrator;
+import com.example.redditcloneandroid.activities.MainActivityComment;
 import com.example.redditcloneandroid.activities.MainActivityCommunities;
 import com.example.redditcloneandroid.activities.MainActivityKt;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
+import com.example.redditcloneandroid.activities.MainActivityPost;
 import com.example.redditcloneandroid.activities.MainActivityUsers;
 import com.example.redditcloneandroid.activities.MainPageActivity;
 import com.example.redditcloneandroid.activities.RegistrationActivity;
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, MainActivityCommunities.class);
+                Intent intent = new Intent(MainActivity.this, MainActivityAdministrator.class);
 
                 startActivity(intent);
             }
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, MainActivityUsers.class);
+                Intent intent = new Intent(MainActivity.this, MainActivityModerator.class);
                 //Intent intent = new Intent(MainActivity.this, CreateUserActivity.class);
                 startActivity(intent);
             }
@@ -78,6 +80,50 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button6 = (Button) findViewById(R.id.crud_users);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityUsers.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button7 = (Button) findViewById(R.id.crud_communities);
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityCommunities.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button8 = (Button) findViewById(R.id.crud_posts);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityPost.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button9 = (Button) findViewById(R.id.crud_comments);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityComment.class);
 
                 startActivity(intent);
             }

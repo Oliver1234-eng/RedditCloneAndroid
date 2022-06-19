@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EditPostActivity">
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="naslov"/>
+
+    <EditText
+        android:id="@+id/textText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="tekst"/>
+
+    <EditText
+        android:id="@+id/idOfCommunityText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="ID zajednice"/>
+
+    <Button
+        android:id="@+id/editPostButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Edit"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"/>
+
+</LinearLayout>

@@ -33,7 +33,8 @@ public class MainActivityAdministrator extends AppCompatActivity {
                     //correct
                     Toast.makeText(MainActivityAdministrator.this,"Uspesna prijava kao administrator",Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(MainActivityAdministrator.this, PostListActivity.class);
+                    //Intent intent = new Intent(MainActivityAdministrator.this, PostListActivity.class);
+                    Intent intent = new Intent(MainActivityAdministrator.this, MainActivityPost.class);
                     startActivity(intent);
 
 
