@@ -12,9 +12,12 @@ import com.example.redditcloneandroid.activities.CreateUserActivity;
 import com.example.redditcloneandroid.activities.MainActivityAdministrator;
 import com.example.redditcloneandroid.activities.MainActivityComment;
 import com.example.redditcloneandroid.activities.MainActivityCommunities;
+import com.example.redditcloneandroid.activities.MainActivityFlair;
 import com.example.redditcloneandroid.activities.MainActivityKt;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
 import com.example.redditcloneandroid.activities.MainActivityPost;
+import com.example.redditcloneandroid.activities.MainActivityReportComment;
+import com.example.redditcloneandroid.activities.MainActivityReportPost;
 import com.example.redditcloneandroid.activities.MainActivityUsers;
 import com.example.redditcloneandroid.activities.MainPageActivity;
 import com.example.redditcloneandroid.activities.RegistrationActivity;
@@ -124,6 +127,39 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, MainActivityComment.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button10 = (Button) findViewById(R.id.crud_flairs);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityFlair.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button11 = (Button) findViewById(R.id.crud_report_comments);
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityReportComment.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button12 = (Button) findViewById(R.id.crud_report_posts);
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityReportPost.class);
 
                 startActivity(intent);
             }

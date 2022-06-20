@@ -13,25 +13,34 @@
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.186" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_community.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_flair.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_report_comment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_report_post.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_post.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_community.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_flair.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_report_comment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_report_post.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_administrator.xml" value="0.15670289855072464" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_comments.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_communities.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_flairs.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_kt.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_moderator.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_post.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_post_retrofit.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_posts.xml" value="0.1" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_report_comments.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_report_posts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_user_retrofit.xml" value="0.21991701244813278" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_users.xml" value="0.25416666666666665" />
@@ -49,9 +58,13 @@
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/create_post_activity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/delete_moderator.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/drawer_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/flair_activity_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_comments.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_communities.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_flairs.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_posts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_report_comments.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_report_posts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_of_users.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_post_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/list_user_item.xml" value="0.25416666666666665" />
@@ -63,7 +76,9 @@
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/post_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/post_report_activity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/registration_activity.xml" value="0.2" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/report_comment_activity_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/report_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/report_post_activity_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/splash.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/suspend_community.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/tabela.xml" value="0.25416666666666665" />

@@ -4,18 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.EditCommentActivity">
+    tools:context=".activities.EditReportPostActivity">
 
     <EditText
-        android:id="@+id/replyText"
+        android:id="@+id/reportReasonPostText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="20dp"
-        android:hint="tekst odgovora"/>
+        android:hint="razlog prijavljivanja"/>
 
     <EditText
-        android:id="@+id/idOfPostText"
+        android:id="@+id/whichPostText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -23,7 +23,7 @@
         android:hint="ID objave"/>
 
     <Button
-        android:id="@+id/editCommentButton"
+        android:id="@+id/editReportPostButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

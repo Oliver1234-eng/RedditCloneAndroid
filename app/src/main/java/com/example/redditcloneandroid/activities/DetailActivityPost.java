@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.fragments.DeletePostFragment;
 import com.example.redditcloneandroid.interfaces.DeletePostInterface;
@@ -62,6 +63,28 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
             }
         });
         getOne(id);
+
+        Button button1 = (Button) findViewById(R.id.poseti_sve_zajednice_button);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(DetailActivityPost.this, MainActivityCommunities.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button2 = (Button) findViewById(R.id.izlistaj_sve_komentare_button);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(DetailActivityPost.this, MainActivityComment.class);
+
+                startActivity(intent);
+            }
+        });
     }
 
     private void getOne(int id) {

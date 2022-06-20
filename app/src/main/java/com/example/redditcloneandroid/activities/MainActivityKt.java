@@ -31,7 +31,7 @@ public class MainActivityKt extends AppCompatActivity {
                     //correct
                     Toast.makeText(MainActivityKt.this,"Uspesna prijava kao korisnik",Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(MainActivityKt.this, PostListActivity.class);
+                    Intent intent = new Intent(MainActivityKt.this, MainActivityPost.class);
                     startActivity(intent);
 
 

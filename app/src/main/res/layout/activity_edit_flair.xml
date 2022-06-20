@@ -4,26 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.EditCommentActivity">
+    tools:context=".activities.EditFlairActivity">
 
     <EditText
-        android:id="@+id/replyText"
+        android:id="@+id/flairNameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="20dp"
         android:hint="tekst odgovora"/>
 
-    <EditText
-        android:id="@+id/idOfPostText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:inputType="number"
-        android:hint="ID objave"/>
-
     <Button
-        android:id="@+id/editCommentButton"
+        android:id="@+id/editFlairButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

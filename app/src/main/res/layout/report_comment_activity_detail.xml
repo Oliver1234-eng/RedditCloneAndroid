@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.DetailActivityPost">
+    tools:context=".activities.DetailActivityReportComment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/idPostText"
+            android:id="@+id/idReportCommentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -36,12 +36,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Naslov: "
+            android:text="Razlog: "
             android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/titleText"
+            android:id="@+id/reportReasonCommentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -57,33 +57,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tekst: "
+            android:text="ID komentara: "
             android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/textText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ID zajednice: "
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:id="@+id/idOfCommunityText"
+            android:id="@+id/whichCommentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -97,7 +76,7 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/editPostButton"
+            android:id="@+id/editReportCommentButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -112,7 +91,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/deletePostButton"
+            android:id="@+id/deleteReportCommentButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -120,38 +99,6 @@
             android:text="Obrisi"
             android:textColor="@color/black"
             android:drawableLeft="@drawable/ic_baseline_delete_forever_24"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <Button
-            android:id="@+id/poseti_sve_zajednice_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="7mm"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/holo_blue"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:text="Poseti zajednicu"/>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/izlistaj_sve_komentare_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/holo_blue"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:text="Pogledaj komentare"/>
 
     </LinearLayout>
 
