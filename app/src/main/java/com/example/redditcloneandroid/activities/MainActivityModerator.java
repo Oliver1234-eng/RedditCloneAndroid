@@ -31,7 +31,7 @@ public class MainActivityModerator extends AppCompatActivity {
                     //correct
                     Toast.makeText(MainActivityModerator.this,"Uspesna prijava kao korisnik",Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(MainActivityModerator.this, PostListActivity.class);
+                    Intent intent = new Intent(MainActivityModerator.this, MainActivityPostModerator.class);
                     startActivity(intent);
 
 

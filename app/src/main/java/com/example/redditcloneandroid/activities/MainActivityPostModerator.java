@@ -28,7 +28,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivityPost extends AppCompatActivity {
+public class MainActivityPostModerator extends AppCompatActivity {
 
     List<Post> posts;
     PostCRUDInterface postCrudInterface;
@@ -40,7 +40,7 @@ public class MainActivityPost extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_posts);
+        setContentView(R.layout.activity_main_posts_moderator);
         listViewPosts = findViewById(R.id.listViewPosts);
         createPostButton = findViewById(R.id.createPostButton);
         createPostButton.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,7 @@ public class MainActivityPost extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivityPost.this, MainActivity.class);
+                Intent intent = new Intent(MainActivityPostModerator.this, MainActivity.class);
 
                 startActivity(intent);
             }
@@ -67,7 +67,7 @@ public class MainActivityPost extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivityPost.this, ProfilActivity.class);
+                Intent intent = new Intent(MainActivityPostModerator.this, ProfilActivity.class);
 
                 startActivity(intent);
             }

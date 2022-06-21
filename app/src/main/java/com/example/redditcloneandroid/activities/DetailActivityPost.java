@@ -64,7 +64,7 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
         });
         getOne(id);
 
-        Button button1 = (Button) findViewById(R.id.poseti_sve_zajednice_button);
+        /*Button button1 = (Button) findViewById(R.id.poseti_sve_zajednice_button);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +84,7 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
 
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
     private void getOne(int id) {

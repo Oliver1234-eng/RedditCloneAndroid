@@ -276,6 +276,18 @@
             android:name=".activities.EditReportPostActivity"
             android:label="@string/app_name"/>
 
+        <activity
+            android:name=".activities.MainActivityGuest"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityGuest"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityPostModerator"
+            android:label="@string/app_name"/>
+
 
     </application>
 

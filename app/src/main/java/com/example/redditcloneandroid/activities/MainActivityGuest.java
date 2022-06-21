@@ -14,11 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
-import com.example.redditcloneandroid.adapters.PostsAdapter;
+import com.example.redditcloneandroid.adapters.PostsGuestAdapter;
 import com.example.redditcloneandroid.interfaces.PostCRUDInterface;
 import com.example.redditcloneandroid.model.Post;
 import com.example.redditcloneandroid.utils.Constants;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
@@ -28,27 +27,18 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivityPost extends AppCompatActivity {
+public class MainActivityGuest extends AppCompatActivity {
 
     List<Post> posts;
     PostCRUDInterface postCrudInterface;
 
     ListView listViewPosts;
-    FloatingActionButton createPostButton;
-    Button odjavaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_posts);
+        setContentView(R.layout.activity_main_guest);
         listViewPosts = findViewById(R.id.listViewPosts);
-        createPostButton = findViewById(R.id.createPostButton);
-        createPostButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                callCreate();
-            }
-        });
         getAll();
 
         Button button2 = (Button) findViewById(R.id.proba);
@@ -56,18 +46,7 @@ public class MainActivityPost extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivityPost.this, MainActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button button3 = (Button) findViewById(R.id.proba2);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivityPost.this, ProfilActivity.class);
+                Intent intent = new Intent(MainActivityGuest.this, MainActivity.class);
 
                 startActivity(intent);
             }
@@ -92,8 +71,8 @@ public class MainActivityPost extends AppCompatActivity {
                     return;
                 }
                 posts = response.body();
-                PostsAdapter postsAdapter = new PostsAdapter(posts, getApplicationContext());
-                listViewPosts.setAdapter(postsAdapter);
+                PostsGuestAdapter postsGuestAdapter = new PostsGuestAdapter(posts, getApplicationContext());
+                listViewPosts.setAdapter(postsGuestAdapter);
                 posts.forEach(p -> Log.i("Objave: ", p.toString()));
             }
 
@@ -106,8 +85,4 @@ public class MainActivityPost extends AppCompatActivity {
         });
     }
 
-    private void callCreate() {
-        Intent intent = new Intent(getApplicationContext(), CreatePostsActivity.class);
-        startActivity(intent);
-    }
 }

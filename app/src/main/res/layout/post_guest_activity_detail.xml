@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.DetailActivityPost">
+    tools:context=".activities.DetailActivityGuest">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -97,29 +97,20 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/editPostButton"
+            android:id="@+id/nazad_na_pocetnu_za_gosta_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:backgroundTint="@color/yellow"
-            android:text="Izmeni"
+            android:layout_marginRight="7mm"
             android:textColor="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_edit_24"/>
+            android:backgroundTint="@color/holo_blue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Nazad"/>
 
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/deletePostButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:backgroundTint="@color/red"
-            android:text="Obrisi"
-            android:textColor="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_delete_forever_24"/>
 
     </LinearLayout>
 

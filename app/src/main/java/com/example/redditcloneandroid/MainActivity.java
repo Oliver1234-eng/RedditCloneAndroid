@@ -13,6 +13,7 @@ import com.example.redditcloneandroid.activities.MainActivityAdministrator;
 import com.example.redditcloneandroid.activities.MainActivityComment;
 import com.example.redditcloneandroid.activities.MainActivityCommunities;
 import com.example.redditcloneandroid.activities.MainActivityFlair;
+import com.example.redditcloneandroid.activities.MainActivityGuest;
 import com.example.redditcloneandroid.activities.MainActivityKt;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
 import com.example.redditcloneandroid.activities.MainActivityPost;
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivityGuest.class);
 
                 startActivity(intent);
             }
