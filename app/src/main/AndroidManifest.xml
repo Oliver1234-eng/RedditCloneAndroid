@@ -39,12 +39,6 @@
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".activities.PostDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity
             android:name=".activities.ProfilActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -64,12 +58,6 @@
 
         <activity
             android:name=".activities.ReportListActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity
-            android:name=".activities.UserDetailActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
@@ -102,12 +90,6 @@
             android:name=".activities.MainPageActivityComment"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity
-            android:name=".activities.CommentDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
 
         <activity
             android:name=".activities.AddNewFlairsActivity"
@@ -286,6 +268,66 @@
 
         <activity
             android:name=".activities.MainActivityPostModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.ProfilActivityModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.ProfilActivityAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityPostAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityPostModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditPostActivityModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreatePostsActivityModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityPostAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreatePostsActivityAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditPostActivityAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreateUserActivityModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreateUserActivityAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityUserModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityUserAdministrator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityUsersModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityUsersAdministrator"
             android:label="@string/app_name"/>
 
 

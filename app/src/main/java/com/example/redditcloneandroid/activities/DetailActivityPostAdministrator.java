@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
-import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.fragments.DeletePostFragment;
 import com.example.redditcloneandroid.interfaces.DeletePostInterface;
@@ -26,7 +25,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DetailActivityPost extends AppCompatActivity implements DeletePostInterface {
+public class DetailActivityPostAdministrator extends AppCompatActivity implements DeletePostInterface {
 
     TextView idPostText;
     TextView titleText;
@@ -41,7 +40,7 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.post_activity_detail);
+        setContentView(R.layout.post_activity_detail_administrator);
 
         idPostText = findViewById(R.id.idPostText);
         titleText = findViewById(R.id.titleText);
@@ -64,12 +63,12 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
         });
         getOne(id);
 
-        Button button1 = (Button) findViewById(R.id.back_posts_user);
+        Button button1 = (Button) findViewById(R.id.back_posts_administrator);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(DetailActivityPost.this, MainActivityPost.class);
+                Intent intent = new Intent(DetailActivityPostAdministrator.this, MainActivityPostAdministrator.class);
 
                 startActivity(intent);
             }
@@ -107,7 +106,7 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
     }
 
     private void callEdit() {
-        Intent intent = new Intent(getApplicationContext(), EditPostActivity.class);
+        Intent intent = new Intent(getApplicationContext(), EditPostActivityAdministrator.class);
         intent.putExtra("objava", post);
         startActivity(intent);
     }
@@ -159,7 +158,7 @@ public class DetailActivityPost extends AppCompatActivity implements DeletePostI
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityPost.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityPostAdministrator.class);
         startActivity(intent);
     }
 }

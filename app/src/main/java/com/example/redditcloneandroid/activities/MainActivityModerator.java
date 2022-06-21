@@ -27,9 +27,9 @@ public class MainActivityModerator extends AppCompatActivity {
         loginButtonKorisnik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("korisnik") && password.getText().toString().equals("korisnik")){
+                if(username.getText().toString().equals("moderator") && password.getText().toString().equals("moderator")){
                     //correct
-                    Toast.makeText(MainActivityModerator.this,"Uspesna prijava kao korisnik",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityModerator.this,"Uspesna prijava kao moderator",Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(MainActivityModerator.this, MainActivityPostModerator.class);
                     startActivity(intent);
@@ -40,17 +40,6 @@ public class MainActivityModerator extends AppCompatActivity {
                     Toast.makeText(MainActivityModerator.this,"Neuspesna prijava !!!",Toast.LENGTH_SHORT).show();
             }
         });
-
-        /*Button button1 = (Button) findViewById(R.id.login_button_korisnik);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivityModerator.this, MainPageActivity.class);
-
-                startActivity(intent);
-            }
-        });*/
 
         Button button2 = (Button) findViewById(R.id.back_to_first_page_korisnik);
         button2.setOnClickListener(new View.OnClickListener() {

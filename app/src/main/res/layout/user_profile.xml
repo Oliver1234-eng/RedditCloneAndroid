@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" android:layout_height="fill_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,7 +21,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingTop="2mm"
-            android:text="@string/podesavanja_profila"
+            android:text="Profil korisnika"
             android:textStyle="bold"
             android:textColor="@color/tekst"
             android:textSize="30dp" />
@@ -63,315 +61,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/prikazi_ime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <TextView
-            android:id="@+id/text_view_prikazi_ime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3mm"
-            android:text="@string/prikazi_ime"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/prikazi_ime_drugi_deo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <EditText
-            android:id="@+id/edit_text_prikazi_ime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:hint="@string/ukucaj_ime_opciono"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/opis_profila"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <TextView
-            android:id="@+id/text_view_opis_profila"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:text="@string/opis_profila"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/opis_profila_drugi_deo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <EditText
-            android:id="@+id/edit_text_opis_profila"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:inputType="text|textMultiLine"
-            android:lines="6"
-            android:minLines="1"
-            android:maxLines="10"
-            android:hint="@string/opis_profila_dva"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/avatar_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp">
-
-        <TextView
-            android:id="@+id/text_view_avatar_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="3mm"
-            android:text="@string/avatar_profil"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:paddingRight="20mm"/>
-
-        <Button
-            android:id="@+id/button_avatar_profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/yellow"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:text="@string/avatar_button"/>
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/end_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <Button
-            android:id="@+id/save_button_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sacuvaj_izmene_button"
-            android:layout_marginTop="5mm"
-            android:backgroundTint="@color/yellow"/>
-
-        <Button
-            android:id="@+id/cancel_button_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/odustani_button"
-            android:layout_marginTop="5mm"
-            android:backgroundTint="@color/yellow"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/deo_za_administratora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/text_view_deo_za_administratora"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3mm"
-            android:text="@string/administrator"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:paddingRight="20mm"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/suspendovanje_zajednice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/suspendovanje_zajednice_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/suspendovanje_zajednice"
-            android:backgroundTint="@color/yellow"
-            android:layout_marginLeft="3mm"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-    android:id="@+id/uklanjanje_moderatora"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/uklanjanje_moderatora_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/uklanjanje_moderatora"
-            android:backgroundTint="@color/yellow"
-            android:layout_marginLeft="3mm"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/deo_za_moderatora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/text_view_deo_za_moderatora"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3mm"
-            android:text="@string/moderator"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:paddingRight="20mm"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/blokiranje_korisnika"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/blokiranje_korisnika_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/blokiranje_korisnika"
-            android:backgroundTint="@color/yellow"
-            android:layout_marginLeft="3mm"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/spisak_neprikladnog_sadrzaja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/spisak_neprikladnog_sadrzaja_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/spisak_neprikladnog_sadrzaja"
-            android:backgroundTint="@color/yellow"
-            android:layout_marginLeft="3mm"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/azuriranje_liste_pravila"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/azuriranje_liste_pravila_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/azuriraj_listu_pravila"
-            android:backgroundTint="@color/yellow"
-            android:layout_marginLeft="3mm"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/dodavanje_novog_taga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/dodavanje_novog_taga_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dodaj_novi_tag"
-            android:backgroundTint="@color/yellow"
-            android:layout_marginLeft="3mm"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/deo_za_korisnika"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/text_view_deo_za_korisnika"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3mm"
-            android:text="@string/korisnik"
-            android:textStyle="normal"
-            android:paddingLeft="3mm"
-            android:textColor="@color/tekst"
-            android:textSize="23dp"
-            android:paddingRight="20mm"/>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/kreiranje_objave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -403,5 +92,19 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nazad_na_home_page_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nazad na pocetnu"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
 </LinearLayout>
-</ScrollView>

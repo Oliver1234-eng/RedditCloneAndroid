@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.adapters.PostsAdapter;
+import com.example.redditcloneandroid.adapters.PostsModeratorAdapter;
 import com.example.redditcloneandroid.interfaces.PostCRUDInterface;
 import com.example.redditcloneandroid.model.Post;
 import com.example.redditcloneandroid.utils.Constants;
@@ -35,7 +36,6 @@ public class MainActivityPostModerator extends AppCompatActivity {
 
     ListView listViewPosts;
     FloatingActionButton createPostButton;
-    Button odjavaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +67,7 @@ public class MainActivityPostModerator extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivityPostModerator.this, ProfilActivity.class);
+                Intent intent = new Intent(MainActivityPostModerator.this, ProfilActivityModerator.class);
 
                 startActivity(intent);
             }
@@ -92,8 +92,8 @@ public class MainActivityPostModerator extends AppCompatActivity {
                     return;
                 }
                 posts = response.body();
-                PostsAdapter postsAdapter = new PostsAdapter(posts, getApplicationContext());
-                listViewPosts.setAdapter(postsAdapter);
+                PostsModeratorAdapter postsModeratorAdapter = new PostsModeratorAdapter(posts, getApplicationContext());
+                listViewPosts.setAdapter(postsModeratorAdapter);
                 posts.forEach(p -> Log.i("Objave: ", p.toString()));
             }
 
@@ -107,7 +107,7 @@ public class MainActivityPostModerator extends AppCompatActivity {
     }
 
     private void callCreate() {
-        Intent intent = new Intent(getApplicationContext(), CreatePostsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), CreatePostsActivityModerator.class);
         startActivity(intent);
     }
 }

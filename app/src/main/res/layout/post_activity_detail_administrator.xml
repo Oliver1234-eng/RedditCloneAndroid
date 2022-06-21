@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.DetailActivityPost">
+    tools:context=".activities.DetailActivityPostAdministrator">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/back_posts_user"
+            android:id="@+id/back_posts_administrator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"

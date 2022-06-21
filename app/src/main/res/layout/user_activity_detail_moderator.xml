@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.DetailActivityPost">
+    tools:context=".activities.DetailActivityUserModerator">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/idPostText"
+            android:id="@+id/idText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -36,12 +36,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Naslov: "
+            android:text="Korisnicko ime: "
             android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/titleText"
+            android:id="@+id/usernameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -57,12 +57,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tekst: "
+            android:text="Lozinka: "
             android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/textText"
+            android:id="@+id/passwordText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -78,12 +78,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ID zajednice: "
+            android:text="Email: "
             android:textStyle="bold"
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/idOfCommunityText"
+            android:id="@+id/emailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"/>
@@ -97,14 +97,14 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/editPostButton"
+            android:id="@+id/users_moderator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:backgroundTint="@color/yellow"
-            android:text="Izmeni"
+            android:backgroundTint="@color/holo_blue"
+            android:text="Nazad"
             android:textColor="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_edit_24"/>
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"/>
 
         <View
             android:layout_width="0dp"
@@ -112,7 +112,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/deletePostButton"
+            android:id="@+id/deleteUserButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -120,24 +120,6 @@
             android:text="Obrisi"
             android:textColor="@color/black"
             android:drawableLeft="@drawable/ic_baseline_delete_forever_24"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <Button
-            android:id="@+id/back_posts_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:backgroundTint="@color/holo_blue"
-            android:text="Na pocetnu"
-            android:textColor="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"/>
 
     </LinearLayout>
 

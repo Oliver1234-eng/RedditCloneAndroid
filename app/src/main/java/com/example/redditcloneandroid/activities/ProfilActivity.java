@@ -18,59 +18,15 @@ public class ProfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_profile);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        Button suspendovanjeZajedniceButton = (Button) findViewById(R.id.suspendovanje_zajednice_button);
-        suspendovanjeZajedniceButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ProfilActivity.this, SuspendCommunityActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button uklanjanjeModeratoraButton = (Button) findViewById(R.id.uklanjanje_moderatora_button);
-        uklanjanjeModeratoraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ProfilActivity.this, DeleteModeratorActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button spisakNeprikladnogSadrzajaButton = (Button) findViewById(R.id.spisak_neprikladnog_sadrzaja_button);
-        spisakNeprikladnogSadrzajaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ProfilActivity.this, ReportListActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button blokiranjeKorisnikaButton = (Button) findViewById(R.id.blokiranje_korisnika_button);
-        blokiranjeKorisnikaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ProfilActivity.this, MainActivityUsers.class);
-
-                startActivity(intent);
-            }
-        });
+        //Toolbar toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         Button promeniLozinku = (Button) findViewById(R.id.button_promeni_lozinku);
         promeniLozinku.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfilActivity.this, ChangePasswordActivity.class);
+                Intent intent = new Intent(ProfilActivity.this, MainActivityUsers.class);
 
                 startActivity(intent);
             }
@@ -98,23 +54,12 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
-        Button dodavanjeNovogTaga = (Button) findViewById(R.id.dodavanje_novog_taga_button);
-        dodavanjeNovogTaga.setOnClickListener(new View.OnClickListener() {
+        Button nazadNaPocetnuStranu = (Button) findViewById(R.id.nazad_na_home_page_user);
+        nazadNaPocetnuStranu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfilActivity.this, AddNewFlairsActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button azuriranjeListePravila = (Button) findViewById(R.id.azuriranje_liste_pravila_button);
-        azuriranjeListePravila.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ProfilActivity.this, UpdateListOfRulesActivity.class);
+                Intent intent = new Intent(ProfilActivity.this, MainActivityPost.class);
 
                 startActivity(intent);
             }

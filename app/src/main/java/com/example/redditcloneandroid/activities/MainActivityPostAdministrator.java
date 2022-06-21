@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.adapters.PostsAdapter;
+import com.example.redditcloneandroid.adapters.PostsAdministratorAdapter;
+import com.example.redditcloneandroid.adapters.PostsModeratorAdapter;
 import com.example.redditcloneandroid.interfaces.PostCRUDInterface;
 import com.example.redditcloneandroid.model.Post;
 import com.example.redditcloneandroid.utils.Constants;
@@ -28,7 +30,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivityPost extends AppCompatActivity {
+public class MainActivityPostAdministrator extends AppCompatActivity {
 
     List<Post> posts;
     PostCRUDInterface postCrudInterface;
@@ -39,7 +41,7 @@ public class MainActivityPost extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_posts);
+        setContentView(R.layout.activity_main_posts_administrator);
         listViewPosts = findViewById(R.id.listViewPosts);
         createPostButton = findViewById(R.id.createPostButton);
         createPostButton.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +57,7 @@ public class MainActivityPost extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivityPost.this, MainActivity.class);
+                Intent intent = new Intent(MainActivityPostAdministrator.this, MainActivity.class);
 
                 startActivity(intent);
             }
@@ -66,7 +68,7 @@ public class MainActivityPost extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivityPost.this, ProfilActivity.class);
+                Intent intent = new Intent(MainActivityPostAdministrator.this, ProfilActivityAdministrator.class);
 
                 startActivity(intent);
             }
@@ -91,8 +93,8 @@ public class MainActivityPost extends AppCompatActivity {
                     return;
                 }
                 posts = response.body();
-                PostsAdapter postsAdapter = new PostsAdapter(posts, getApplicationContext());
-                listViewPosts.setAdapter(postsAdapter);
+                PostsAdministratorAdapter postsAdministratorAdapter = new PostsAdministratorAdapter(posts, getApplicationContext());
+                listViewPosts.setAdapter(postsAdministratorAdapter);
                 posts.forEach(p -> Log.i("Objave: ", p.toString()));
             }
 
@@ -106,7 +108,7 @@ public class MainActivityPost extends AppCompatActivity {
     }
 
     private void callCreate() {
-        Intent intent = new Intent(getApplicationContext(), CreatePostsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), CreatePostsActivityAdministrator.class);
         startActivity(intent);
     }
 }
