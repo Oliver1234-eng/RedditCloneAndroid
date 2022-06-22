@@ -76,37 +76,18 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/editReportPostButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:backgroundTint="@color/yellow"
-            android:text="Izmeni"
-            android:textColor="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_edit_24"/>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <Button
             android:id="@+id/deleteReportPostButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:backgroundTint="@color/red"
-            android:text="Obrisi"
-            android:textColor="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_delete_forever_24"/>
+            android:text="Prihvati prijavu"
+            android:textColor="@color/black"/>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/back"

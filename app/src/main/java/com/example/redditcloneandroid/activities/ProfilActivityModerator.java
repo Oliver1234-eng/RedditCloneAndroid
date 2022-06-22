@@ -19,12 +19,23 @@ public class ProfilActivityModerator extends AppCompatActivity {
         //Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
-        Button spisakNeprikladnogSadrzajaButton = (Button) findViewById(R.id.pregledaj_prijavljeni_sadrzaj);
-        spisakNeprikladnogSadrzajaButton.setOnClickListener(new View.OnClickListener() {
+        Button spisakNeprikladnihObjava = (Button) findViewById(R.id.pregledaj_prijavaljene_objave);
+        spisakNeprikladnihObjava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfilActivityModerator.this, ReportListActivity.class);
+                Intent intent = new Intent(ProfilActivityModerator.this, MainActivityReportPostModerator.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button spisakNeprikladnihKomentara = (Button) findViewById(R.id.pregledaj_prijavljene_komentare);
+        spisakNeprikladnihKomentara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivityModerator.this, MainActivityReportCommentModerator.class);
 
                 startActivity(intent);
             }
@@ -57,7 +68,7 @@ public class ProfilActivityModerator extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfilActivityModerator.this, MainActivityCommunities.class);
+                Intent intent = new Intent(ProfilActivityModerator.this, MainActivityCommunitiesModerator.class);
 
                 startActivity(intent);
             }

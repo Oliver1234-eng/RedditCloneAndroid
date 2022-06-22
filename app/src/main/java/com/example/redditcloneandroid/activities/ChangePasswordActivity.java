@@ -16,8 +16,8 @@ public class ChangePasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.change_password);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         Button sacuvaj = (Button) findViewById(R.id.promena_lozinke_sacuvaj);
         sacuvaj.setOnClickListener(new View.OnClickListener() {

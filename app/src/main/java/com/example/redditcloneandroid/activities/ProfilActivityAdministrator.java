@@ -23,7 +23,7 @@ public class ProfilActivityAdministrator extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfilActivityAdministrator.this, SuspendCommunityActivity.class);
+                Intent intent = new Intent(ProfilActivityAdministrator.this, MainActivityCommunitiesAdministrator.class);
 
                 startActivity(intent);
             }

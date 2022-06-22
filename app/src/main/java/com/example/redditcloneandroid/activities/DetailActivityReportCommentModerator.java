@@ -25,12 +25,11 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DetailActivityReportComment extends AppCompatActivity implements DeleteReportCommentInterface {
+public class DetailActivityReportCommentModerator extends AppCompatActivity implements DeleteReportCommentInterface {
 
     TextView idReportCommentText;
     TextView reportReasonCommentText;
     TextView whichCommentText;
-    Button editReportCommentButton;
     Button deleteReportCommentButton;
 
     ReportCommentCRUDInterface reportCommentCrudInterface;
@@ -39,19 +38,12 @@ public class DetailActivityReportComment extends AppCompatActivity implements De
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.report_comment_activity_detail);
+        setContentView(R.layout.report_comment_activity_detail_moderator);
 
         idReportCommentText = findViewById(R.id.idReportCommentText);
         reportReasonCommentText = findViewById(R.id.reportReasonCommentText);
         whichCommentText = findViewById(R.id.whichCommentText);
         int id = getIntent().getExtras().getInt("id");
-        editReportCommentButton = findViewById(R.id.editReportCommentButton);
-        editReportCommentButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                callEdit();
-            }
-        });
         deleteReportCommentButton = findViewById(R.id.deleteReportCommentButton);
         deleteReportCommentButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +58,7 @@ public class DetailActivityReportComment extends AppCompatActivity implements De
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(DetailActivityReportComment.this, ProfilActivity.class);
+                Intent intent = new Intent(DetailActivityReportCommentModerator.this, ProfilActivityModerator.class);
 
                 startActivity(intent);
             }
@@ -100,12 +92,6 @@ public class DetailActivityReportComment extends AppCompatActivity implements De
                 Log.e("Throw err: ", t.getMessage());
             }
         });
-    }
-
-    private void callEdit() {
-        Intent intent = new Intent(getApplicationContext(), EditReportCommentActivity.class);
-        intent.putExtra("prijavljeniKomentar", reportComment);
-        startActivity(intent);
     }
 
     @Override
@@ -155,7 +141,7 @@ public class DetailActivityReportComment extends AppCompatActivity implements De
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityReportComment.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityReportCommentModerator.class);
         startActivity(intent);
     }
 }

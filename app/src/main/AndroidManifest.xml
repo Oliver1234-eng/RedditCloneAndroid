@@ -87,11 +87,6 @@
         </activity>
 
         <activity
-            android:name=".activities.MainPageActivityComment"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity
             android:name=".activities.AddNewFlairsActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -424,6 +419,22 @@
 
         <activity
             android:name=".activities.DetailActivityPostThree"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityReportCommentModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityReportPostModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityReportCommentModerator"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityReportPostModerator"
             android:label="@string/app_name"/>
 
     </application>

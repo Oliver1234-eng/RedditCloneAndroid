@@ -25,12 +25,11 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DetailActivityReportPost extends AppCompatActivity implements DeleteReportPostInterface {
+public class DetailActivityReportPostModerator extends AppCompatActivity implements DeleteReportPostInterface {
 
     TextView idReportPostText;
     TextView reportReasonPostText;
     TextView whichPostText;
-    Button editReportPostButton;
     Button deleteReportPostButton;
 
     ReportPostCRUDInterface reportPostCrudInterface;
@@ -39,19 +38,12 @@ public class DetailActivityReportPost extends AppCompatActivity implements Delet
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.report_post_activity_detail);
+        setContentView(R.layout.report_post_activity_detail_moderator);
 
         idReportPostText = findViewById(R.id.idReportPostText);
         reportReasonPostText = findViewById(R.id.reportReasonPostText);
         whichPostText = findViewById(R.id.whichPostText);
         int id = getIntent().getExtras().getInt("id");
-        editReportPostButton = findViewById(R.id.editReportPostButton);
-        editReportPostButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                callEdit();
-            }
-        });
         deleteReportPostButton = findViewById(R.id.deleteReportPostButton);
         deleteReportPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +58,7 @@ public class DetailActivityReportPost extends AppCompatActivity implements Delet
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(DetailActivityReportPost.this, ProfilActivity.class);
+                Intent intent = new Intent(DetailActivityReportPostModerator.this, ProfilActivityModerator.class);
 
                 startActivity(intent);
             }
@@ -100,12 +92,6 @@ public class DetailActivityReportPost extends AppCompatActivity implements Delet
                 Log.e("Throw err: ", t.getMessage());
             }
         });
-    }
-
-    private void callEdit() {
-        Intent intent = new Intent(getApplicationContext(), EditReportPostActivity.class);
-        intent.putExtra("prijavljenaObjava", reportPost);
-        startActivity(intent);
     }
 
     @Override
@@ -155,7 +141,7 @@ public class DetailActivityReportPost extends AppCompatActivity implements Delet
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityReportPost.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityReportPostModerator.class);
         startActivity(intent);
     }
 }

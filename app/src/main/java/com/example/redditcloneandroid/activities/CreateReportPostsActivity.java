@@ -41,7 +41,7 @@ public class CreateReportPostsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_report_post);
         reportReasonPostText = findViewById(R.id.reportReasonPostText);
         whichPostText = findViewById(R.id.whichPostText);
-        whichPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "4")});
+        whichPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "9")});
         createReportPostButton = findViewById(R.id.createReportPostButton);
         reportReasonPostText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -122,8 +122,9 @@ public class CreateReportPostsActivity extends AppCompatActivity {
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityReportPost.class);
+        Intent intent = new Intent(getApplicationContext(), ProfilActivity.class);
         startActivity(intent);
+        Toast.makeText(CreateReportPostsActivity.this,"Uspesno prijavljen neprikladan sadrzaj",Toast.LENGTH_SHORT).show();
     }
 
     private boolean buttonEnabled() {

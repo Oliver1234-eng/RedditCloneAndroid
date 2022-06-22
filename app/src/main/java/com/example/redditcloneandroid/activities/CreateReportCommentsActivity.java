@@ -41,7 +41,7 @@ public class CreateReportCommentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_report_comment);
         reportReasonCommentText = findViewById(R.id.reportReasonCommentText);
         whichCommentText = findViewById(R.id.whichCommentText);
-        whichCommentText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "4")});
+        whichCommentText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "9")});
         createReportCommentButton = findViewById(R.id.createReportCommentButton);
         reportReasonCommentText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -122,8 +122,9 @@ public class CreateReportCommentsActivity extends AppCompatActivity {
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityReportComment.class);
+        Intent intent = new Intent(getApplicationContext(), ProfilActivity.class);
         startActivity(intent);
+        Toast.makeText(CreateReportCommentsActivity.this,"Uspesno prijavljen neprikladan sadrzaj",Toast.LENGTH_SHORT).show();
     }
 
     private boolean buttonEnabled() {

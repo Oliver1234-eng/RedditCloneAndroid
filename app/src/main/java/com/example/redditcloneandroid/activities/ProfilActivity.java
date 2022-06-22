@@ -76,6 +76,28 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
+        Button neprikladnaObjava = (Button) findViewById(R.id.prijava_neprikladne_objave);
+        neprikladnaObjava.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, CreateReportPostsActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button neprikladanSadrzaj = (Button) findViewById(R.id.prijava_neprikladnog_komentara);
+        neprikladanSadrzaj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, CreateReportCommentsActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
         /*Button kreiranjeZajednice = (Button) findViewById(R.id.kreiranje_zajednice_button);
         kreiranjeZajednice.setOnClickListener(new View.OnClickListener() {
             @Override

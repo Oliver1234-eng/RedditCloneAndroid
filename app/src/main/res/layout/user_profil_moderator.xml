@@ -82,21 +82,36 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/spisak_neprikladnog_sadrzaja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/pregledaj_prijavljeni_sadrzaj"
+                android:id="@+id/pregledaj_prijavaljene_objave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/spisak_neprikladnog_sadrzaja"
+                android:text="Spisak neprikladnih objava"
                 android:backgroundTint="@color/yellow"
                 android:layout_marginLeft="3mm"/>
 
 
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pregledaj_prijavljene_komentare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spisak neprikladnih komentara"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+
+    </LinearLayout>
 
         <LinearLayout
             android:id="@+id/azuriranje_liste_pravila"
