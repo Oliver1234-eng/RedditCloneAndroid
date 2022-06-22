@@ -40,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/holo_blue"
         android:text="Odjava"/>
 
     <Button
@@ -48,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/proba"
+        android:backgroundTint="@color/holo_blue"
         android:text="Profil"/>
 
 </RelativeLayout>

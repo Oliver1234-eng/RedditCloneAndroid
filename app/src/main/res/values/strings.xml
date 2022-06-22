@@ -21,7 +21,6 @@
     <string name="selektovani_datum"></string>
     <string name="datum_registracije_odabrani">Odabrani datum je:</string>
     <string name="gost">Nastavite kao gost</string>
-    <!-- <string name="app_name">MyTable</string> -->
     <string name="col1">Name</string>
     <string name="col2">Age</string>
     <string name="col3">Surname</string>
@@ -161,4 +160,12 @@
     <string name="prijava_kao_korisnik">Prijavite se kao korisnik</string>
     <string name="pregled_objava">Pregled objava</string>
     <string name="pregled_zajednica">Pregled zajednica</string>
+    <string name="komentari_jedan">Komentari sa objave 1</string>
+    <string name="komentari_dva">Komentari sa objave 2</string>
+    <string name="komentari_tri">Komentari sa objave 3</string>
+    <string name="pregled_objava_kao_gost">Pregled objava kao gost</string>
+    <string name="pregled_komentara_kao_gost">Pregled komentara kao gost</string>
+    <string name="objave_jedan">Objave sa zajednice 1</string>
+    <string name="objave_dva">Objave sa zajednice 2</string>
+    <string name="objave_tri">Objave sa zajednice 3</string>
 </resources>

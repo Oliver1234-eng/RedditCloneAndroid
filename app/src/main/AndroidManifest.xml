@@ -362,6 +362,70 @@
             android:name=".activities.MainActivityCommunitiesModerator"
             android:label="@string/app_name"/>
 
+        <activity
+            android:name=".activities.CreateCommentTwoActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.CreateCommentThreeActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityCommentTwo"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityCommentThree"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditCommentTwoActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.EditCommentThreeActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityCommentTwo"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityCommentThree"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityCommentGuest"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityCommentGuest"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityPostOne"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityPostTwo"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.MainActivityPostThree"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityPostOne"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityPostTwo"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".activities.DetailActivityPostThree"
+            android:label="@string/app_name"/>
+
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

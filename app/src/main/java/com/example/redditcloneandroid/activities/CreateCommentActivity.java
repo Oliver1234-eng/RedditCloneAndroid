@@ -41,7 +41,7 @@ public class CreateCommentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_comment);
         replyText = findViewById(R.id.replyText);
         idOfPostText = findViewById(R.id.idOfPostText);
-        idOfPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "4")});
+        idOfPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "1")});
         createCommentButton = findViewById(R.id.createCommentButton);
         replyText.addTextChangedListener(new TextWatcher() {
             @Override

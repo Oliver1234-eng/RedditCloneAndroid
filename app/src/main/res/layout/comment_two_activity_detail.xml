@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.DetailActivityComment">
+    tools:context=".activities.DetailActivityCommentTwo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,7 +109,7 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/comments_one"
+            android:id="@+id/comments_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"

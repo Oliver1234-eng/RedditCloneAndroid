@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivityPost">
+    tools:context=".activities.MainActivityCommentTwo">
 
     <ListView
-        android:id="@+id/listViewPosts"
+        android:id="@+id/listViewComments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -24,7 +24,7 @@
         -->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/createPostButton"
+        android:id="@+id/createCommentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundGravity="bottom|right"
@@ -33,23 +33,5 @@
         android:layout_alignParentRight="true"
         android:backgroundTint="@color/green"
         android:src="@drawable/ic_baseline_add_circle_outline_24"/>
-
-    <Button
-        android:id="@+id/proba"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/holo_blue"
-        android:text="Odjava"/>
-
-    <Button
-        android:id="@+id/proba2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/proba"
-        android:backgroundTint="@color/holo_blue"
-        android:text="Profil"/>
 
 </RelativeLayout>

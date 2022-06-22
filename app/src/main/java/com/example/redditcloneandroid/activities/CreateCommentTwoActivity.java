@@ -15,9 +15,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.redditcloneandroid.R;
-import com.example.redditcloneandroid.dto.CommentDto;
-import com.example.redditcloneandroid.interfaces.CommentCRUDInterface;
-import com.example.redditcloneandroid.model.Comment;
+import com.example.redditcloneandroid.dto.CommentTwoDto;
+import com.example.redditcloneandroid.interfaces.CommentTwoCRUDInterface;
+import com.example.redditcloneandroid.model.CommentTwo;
 import com.example.redditcloneandroid.utils.Constants;
 import com.example.redditcloneandroid.utils.InputFilterMinMax;
 
@@ -27,28 +27,22 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class EditCommentActivity extends AppCompatActivity {
+public class CreateCommentTwoActivity extends AppCompatActivity {
 
-    Comment comment;
     EditText replyText;
     EditText idOfPostText;
-    Button editCommentButton;
+    Button createCommentButton;
 
-    CommentCRUDInterface commentCrudInterface;
+    CommentTwoCRUDInterface commentCrudInterface;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_comment);
-        Intent detailIntent = getIntent();
-        comment = (Comment) detailIntent.getSerializableExtra("komentar");
-        //Log.i("komentar: ", comment.toString());
+        setContentView(R.layout.activity_create_comment_two);
         replyText = findViewById(R.id.replyText);
         idOfPostText = findViewById(R.id.idOfPostText);
-        idOfPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "1")});
-        replyText.setText(comment.getReply());
-        idOfPostText.setText(String.valueOf(comment.getPost()));
-        editCommentButton = findViewById(R.id.editCommentButton);
+        idOfPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("2", "2")});
+        createCommentButton = findViewById(R.id.createCommentButton);
         replyText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -57,7 +51,7 @@ public class EditCommentActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                editCommentButton.setEnabled(buttonEnabled());
+                createCommentButton.setEnabled(buttonEnabled());
             }
 
             @Override
@@ -74,7 +68,7 @@ public class EditCommentActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                editCommentButton.setEnabled(buttonEnabled());
+                createCommentButton.setEnabled(buttonEnabled());
             }
 
             @Override
@@ -83,28 +77,28 @@ public class EditCommentActivity extends AppCompatActivity {
             }
         });
 
-        editCommentButton.setEnabled(buttonEnabled());
-        editCommentButton.setOnClickListener(new View.OnClickListener() {
+        createCommentButton.setEnabled(buttonEnabled());
+        createCommentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CommentDto dto = new CommentDto(replyText.getText().toString(), Integer.valueOf(idOfPostText.getText().toString()));
-                edit(dto);
+                CommentTwoDto dto = new CommentTwoDto(replyText.getText().toString(), Integer.valueOf(idOfPostText.getText().toString()));
+                create(dto);
             }
         });
+
     }
 
-    private void edit(CommentDto dto) {
+    private void create(CommentTwoDto dto) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        commentCrudInterface = retrofit.create(CommentCRUDInterface.class);
-        int id = comment.getId();
-        Call<Comment> call = commentCrudInterface.edit(id, dto);
-        call.enqueue(new Callback<Comment>() {
+        commentCrudInterface = retrofit.create(CommentTwoCRUDInterface.class);
+        Call<CommentTwo> call = commentCrudInterface.create(dto);
+        call.enqueue(new Callback<CommentTwo>() {
             @Override
-            public void onResponse(Call<Comment> call, Response<Comment> response) {
+            public void onResponse(Call<CommentTwo> call, Response<CommentTwo> response) {
                 if(!response.isSuccessful()) {
                     Toast toast = Toast.makeText(getApplicationContext(), response.message(), Toast.LENGTH_LONG);
                     toast.show();
@@ -112,14 +106,14 @@ public class EditCommentActivity extends AppCompatActivity {
                     return;
                 }
 
-                Comment comment = response.body();
-                Toast toast = Toast.makeText(getApplicationContext(), comment.getReply() + " izmenjen!!!", Toast.LENGTH_LONG);
+                CommentTwo comment = response.body();
+                Toast toast = Toast.makeText(getApplicationContext(), comment.getReply() + " dodat!!!", Toast.LENGTH_LONG);
                 toast.show();
                 callMain();
             }
 
             @Override
-            public void onFailure(Call<Comment> call, Throwable t) {
+            public void onFailure(Call<CommentTwo> call, Throwable t) {
                 Toast toast = Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG);
                 toast.show();
                 Log.e("Throw err: ", t.getMessage());
@@ -128,7 +122,7 @@ public class EditCommentActivity extends AppCompatActivity {
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityComment.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityCommentTwo.class);
         startActivity(intent);
     }
 

@@ -15,9 +15,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.redditcloneandroid.R;
-import com.example.redditcloneandroid.dto.CommentDto;
-import com.example.redditcloneandroid.interfaces.CommentCRUDInterface;
-import com.example.redditcloneandroid.model.Comment;
+import com.example.redditcloneandroid.dto.CommentThreeDto;
+import com.example.redditcloneandroid.interfaces.CommentThreeCRUDInterface;
+import com.example.redditcloneandroid.model.CommentThree;
 import com.example.redditcloneandroid.utils.Constants;
 import com.example.redditcloneandroid.utils.InputFilterMinMax;
 
@@ -27,25 +27,25 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class EditCommentActivity extends AppCompatActivity {
+public class EditCommentThreeActivity extends AppCompatActivity {
 
-    Comment comment;
+    CommentThree comment;
     EditText replyText;
     EditText idOfPostText;
     Button editCommentButton;
 
-    CommentCRUDInterface commentCrudInterface;
+    CommentThreeCRUDInterface commentCrudInterface;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_comment);
+        setContentView(R.layout.activity_edit_comment_three);
         Intent detailIntent = getIntent();
-        comment = (Comment) detailIntent.getSerializableExtra("komentar");
-        //Log.i("komentar: ", comment.toString());
+        comment = (CommentThree) detailIntent.getSerializableExtra("komentar");
+        //Log.i("komentar: ", commentThree.toString());
         replyText = findViewById(R.id.replyText);
         idOfPostText = findViewById(R.id.idOfPostText);
-        idOfPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "1")});
+        idOfPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("3", "3")});
         replyText.setText(comment.getReply());
         idOfPostText.setText(String.valueOf(comment.getPost()));
         editCommentButton = findViewById(R.id.editCommentButton);
@@ -87,24 +87,24 @@ public class EditCommentActivity extends AppCompatActivity {
         editCommentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CommentDto dto = new CommentDto(replyText.getText().toString(), Integer.valueOf(idOfPostText.getText().toString()));
+                CommentThreeDto dto = new CommentThreeDto(replyText.getText().toString(), Integer.valueOf(idOfPostText.getText().toString()));
                 edit(dto);
             }
         });
     }
 
-    private void edit(CommentDto dto) {
+    private void edit(CommentThreeDto dto) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        commentCrudInterface = retrofit.create(CommentCRUDInterface.class);
+        commentCrudInterface = retrofit.create(CommentThreeCRUDInterface.class);
         int id = comment.getId();
-        Call<Comment> call = commentCrudInterface.edit(id, dto);
-        call.enqueue(new Callback<Comment>() {
+        Call<CommentThree> call = commentCrudInterface.edit(id, dto);
+        call.enqueue(new Callback<CommentThree>() {
             @Override
-            public void onResponse(Call<Comment> call, Response<Comment> response) {
+            public void onResponse(Call<CommentThree> call, Response<CommentThree> response) {
                 if(!response.isSuccessful()) {
                     Toast toast = Toast.makeText(getApplicationContext(), response.message(), Toast.LENGTH_LONG);
                     toast.show();
@@ -112,14 +112,14 @@ public class EditCommentActivity extends AppCompatActivity {
                     return;
                 }
 
-                Comment comment = response.body();
+                CommentThree comment = response.body();
                 Toast toast = Toast.makeText(getApplicationContext(), comment.getReply() + " izmenjen!!!", Toast.LENGTH_LONG);
                 toast.show();
                 callMain();
             }
 
             @Override
-            public void onFailure(Call<Comment> call, Throwable t) {
+            public void onFailure(Call<CommentThree> call, Throwable t) {
                 Toast toast = Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG);
                 toast.show();
                 Log.e("Throw err: ", t.getMessage());
@@ -128,7 +128,7 @@ public class EditCommentActivity extends AppCompatActivity {
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityComment.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityCommentThree.class);
         startActivity(intent);
     }
 

@@ -6,26 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.redditcloneandroid.activities.CreateUserActivity;
 import com.example.redditcloneandroid.activities.MainActivityAdministrator;
-import com.example.redditcloneandroid.activities.MainActivityComment;
-import com.example.redditcloneandroid.activities.MainActivityCommunities;
-import com.example.redditcloneandroid.activities.MainActivityFlair;
+import com.example.redditcloneandroid.activities.MainActivityCommentGuest;
 import com.example.redditcloneandroid.activities.MainActivityGuest;
 import com.example.redditcloneandroid.activities.MainActivityKt;
 import com.example.redditcloneandroid.activities.MainActivityModerator;
-import com.example.redditcloneandroid.activities.MainActivityPost;
 import com.example.redditcloneandroid.activities.MainActivityReportComment;
 import com.example.redditcloneandroid.activities.MainActivityReportPost;
-import com.example.redditcloneandroid.activities.MainActivityUsers;
-import com.example.redditcloneandroid.activities.MainPageActivity;
-import com.example.redditcloneandroid.activities.RegistrationActivity;
-import com.example.redditcloneandroid.activities.UserForm;
-import com.example.redditcloneandroid.activities.UserListActivity;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,7 +78,40 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button6 = (Button) findViewById(R.id.crud_users);
+        Button button11 = (Button) findViewById(R.id.crud_report_comments);
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityReportComment.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button12 = (Button) findViewById(R.id.crud_report_posts);
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityReportPost.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button button13 = (Button) findViewById(R.id.window_guest2_login_button);
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityCommentGuest.class);
+
+                startActivity(intent);
+            }
+        });
+
+        /*Button button6 = (Button) findViewById(R.id.crud_users);
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,29 +164,7 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
             }
-        });
-
-        Button button11 = (Button) findViewById(R.id.crud_report_comments);
-        button11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, MainActivityReportComment.class);
-
-                startActivity(intent);
-            }
-        });
-
-        Button button12 = (Button) findViewById(R.id.crud_report_posts);
-        button12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, MainActivityReportPost.class);
-
-                startActivity(intent);
-            }
-        });
+        });*/
 
     }
 

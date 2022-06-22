@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.redditcloneandroid.R;
-import com.example.redditcloneandroid.fragments.DeleteCommentFragment;
-import com.example.redditcloneandroid.interfaces.CommentCRUDInterface;
-import com.example.redditcloneandroid.interfaces.DeleteCommentInterface;
-import com.example.redditcloneandroid.model.Comment;
+import com.example.redditcloneandroid.fragments.DeleteCommentTwoFragment;
+import com.example.redditcloneandroid.interfaces.CommentTwoCRUDInterface;
+import com.example.redditcloneandroid.interfaces.DeleteCommentTwoInterface;
+import com.example.redditcloneandroid.model.CommentTwo;
 import com.example.redditcloneandroid.utils.Constants;
 
 import retrofit2.Call;
@@ -25,7 +25,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DetailActivityComment extends AppCompatActivity implements DeleteCommentInterface {
+public class DetailActivityCommentTwo extends AppCompatActivity implements DeleteCommentTwoInterface {
 
     TextView idCommentText;
     TextView replyText;
@@ -33,13 +33,13 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
     Button editCommentButton;
     Button deleteCommentButton;
 
-    CommentCRUDInterface commentCrudInterface;
-    Comment comment;
+    CommentTwoCRUDInterface commentCrudInterface;
+    CommentTwo comment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.comment_activity_detail);
+        setContentView(R.layout.comment_two_activity_detail);
 
         idCommentText = findViewById(R.id.idCommentText);
         replyText = findViewById(R.id.replyText);
@@ -61,12 +61,12 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
         });
         getOne(id);
 
-        Button nazad = (Button) findViewById(R.id.comments_one);
+        Button nazad = (Button) findViewById(R.id.comments_two);
         nazad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(DetailActivityComment.this, ProfilActivity.class);
+                Intent intent = new Intent(DetailActivityCommentTwo.this, ProfilActivity.class);
 
                 startActivity(intent);
             }
@@ -75,10 +75,10 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
 
     private void getOne(int id) {
         commentCrudInterface = getCommentCrudInterface();
-        Call<Comment> call = commentCrudInterface.getOne(id);
-        call.enqueue(new Callback<Comment>() {
+        Call<CommentTwo> call = commentCrudInterface.getOne(id);
+        call.enqueue(new Callback<CommentTwo>() {
             @Override
-            public void onResponse(Call<Comment> call, Response<Comment> response) {
+            public void onResponse(Call<CommentTwo> call, Response<CommentTwo> response) {
                 if(!response.isSuccessful()) {
                     Toast toast = Toast.makeText(getApplicationContext(), response.message(), Toast.LENGTH_LONG);
                     toast.show();
@@ -93,7 +93,7 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
             }
 
             @Override
-            public void onFailure(Call<Comment> call, Throwable t) {
+            public void onFailure(Call<CommentTwo> call, Throwable t) {
                 Toast toast = Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG);
                 toast.show();
                 Log.e("Throw err: ", t.getMessage());
@@ -102,7 +102,7 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
     }
 
     private void callEdit() {
-        Intent intent = new Intent(getApplicationContext(), EditCommentActivity.class);
+        Intent intent = new Intent(getApplicationContext(), EditCommentTwoActivity.class);
         intent.putExtra("komentar", comment);
         startActivity(intent);
     }
@@ -110,17 +110,17 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
     @Override
     public void showDeleteDialog(int id) {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        DeleteCommentFragment deleteCommentFragment = new DeleteCommentFragment("Obrisi komentar ", comment.getId(), this);
+        DeleteCommentTwoFragment deleteCommentFragment = new DeleteCommentTwoFragment("Obrisi komentar ", comment.getId(), this);
         deleteCommentFragment.show(fragmentManager, "Alert");
     }
 
     @Override
     public void delete(int id) {
         commentCrudInterface = getCommentCrudInterface();
-        Call<Comment> call = commentCrudInterface.delete(id);
-        call.enqueue(new Callback<Comment>() {
+        Call<CommentTwo> call = commentCrudInterface.delete(id);
+        call.enqueue(new Callback<CommentTwo>() {
             @Override
-            public void onResponse(Call<Comment> call, Response<Comment> response) {
+            public void onResponse(Call<CommentTwo> call, Response<CommentTwo> response) {
                 if(!response.isSuccessful()) {
                     Toast toast = Toast.makeText(getApplicationContext(), response.message(), Toast.LENGTH_LONG);
                     toast.show();
@@ -135,7 +135,7 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
             }
 
             @Override
-            public void onFailure(Call<Comment> call, Throwable t) {
+            public void onFailure(Call<CommentTwo> call, Throwable t) {
                 Toast toast = Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG);
                 toast.show();
                 Log.e("Throw err: ", t.getMessage());
@@ -143,18 +143,18 @@ public class DetailActivityComment extends AppCompatActivity implements DeleteCo
         });
     }
 
-    private CommentCRUDInterface getCommentCrudInterface() {
+    private CommentTwoCRUDInterface getCommentCrudInterface() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        commentCrudInterface = retrofit.create(CommentCRUDInterface.class);
+        commentCrudInterface = retrofit.create(CommentTwoCRUDInterface.class);
         return commentCrudInterface;
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityComment.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityCommentTwo.class);
         startActivity(intent);
     }
 }

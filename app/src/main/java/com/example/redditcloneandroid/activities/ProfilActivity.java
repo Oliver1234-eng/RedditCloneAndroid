@@ -43,7 +43,40 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
-        Button kreiranjeZajednice = (Button) findViewById(R.id.kreiranje_zajednice_button);
+        Button zajednicaJedan = (Button) findViewById(R.id.zajednica_jedan);
+        zajednicaJedan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityPostOne.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button zajednicaDva = (Button) findViewById(R.id.zajednica_dva);
+        zajednicaDva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityPostTwo.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button zajednicaTri = (Button) findViewById(R.id.zajednica_tri);
+        zajednicaTri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityPostThree.class);
+
+                startActivity(intent);
+            }
+        });
+
+        /*Button kreiranjeZajednice = (Button) findViewById(R.id.kreiranje_zajednice_button);
         kreiranjeZajednice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +85,7 @@ public class ProfilActivity extends AppCompatActivity {
 
                 startActivity(intent);
             }
-        });
+        });*/
 
         Button nazadNaPocetnuStranu = (Button) findViewById(R.id.nazad_na_home_page_user);
         nazadNaPocetnuStranu.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +93,39 @@ public class ProfilActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(ProfilActivity.this, MainActivityPost.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button objavaJedan = (Button) findViewById(R.id.komentari_jedan_button);
+        objavaJedan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityComment.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button objavaDva = (Button) findViewById(R.id.komentari_dva_button);
+        objavaDva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityCommentTwo.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button objavaTri = (Button) findViewById(R.id.komentari_tri_button);
+        objavaTri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityCommentThree.class);
 
                 startActivity(intent);
             }

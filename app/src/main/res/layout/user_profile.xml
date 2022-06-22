@@ -77,6 +77,51 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zajednica_jedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/objave_jedan"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zajednica_dva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/objave_dva"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zajednica_tri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/objave_tri"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
         android:id="@+id/kreiranje_zajednice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,6 +132,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pregled_zajednica"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/komentari_jedan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/komentari_jedan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/komentari_jedan"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/komentari_dva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/komentari_dva_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/komentari_dva"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/komentari_tri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/komentari_tri_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/komentari_tri"
             android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
