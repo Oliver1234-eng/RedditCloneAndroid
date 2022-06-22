@@ -25,7 +25,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DetailActivityCommunity extends AppCompatActivity implements DeleteCommunityInterface {
+public class DetailActivityCommunityModerator extends AppCompatActivity implements DeleteCommunityInterface {
 
     TextView idCommunityText;
     TextView nameText;
@@ -40,7 +40,7 @@ public class DetailActivityCommunity extends AppCompatActivity implements Delete
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.community_activity_detail);
+        setContentView(R.layout.community_activity_detail_moderator);
 
         idCommunityText = findViewById(R.id.idCommunityText);
         nameText = findViewById(R.id.nameText);
@@ -63,12 +63,12 @@ public class DetailActivityCommunity extends AppCompatActivity implements Delete
         });
         getOne(id);
 
-        Button nazadNaPocetnuStranu = (Button) findViewById(R.id.communities_user);
+        Button nazadNaPocetnuStranu = (Button) findViewById(R.id.communities_moderator);
         nazadNaPocetnuStranu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(DetailActivityCommunity.this, ProfilActivity.class);
+                Intent intent = new Intent(DetailActivityCommunityModerator.this, ProfilActivityModerator.class);
 
                 startActivity(intent);
             }
@@ -105,7 +105,7 @@ public class DetailActivityCommunity extends AppCompatActivity implements Delete
     }
 
     private void callEdit() {
-        Intent intent = new Intent(getApplicationContext(), EditCommunityActivity.class);
+        Intent intent = new Intent(getApplicationContext(), EditCommunityActivityModerator.class);
         intent.putExtra("zajednica", community);
         startActivity(intent);
     }
@@ -157,7 +157,7 @@ public class DetailActivityCommunity extends AppCompatActivity implements Delete
     }
 
     private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivityCommunities.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivityCommunitiesModerator.class);
         startActivity(intent);
     }
 }

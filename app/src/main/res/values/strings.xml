@@ -159,4 +159,6 @@
     <string name="lista_pravila_dva">Lista pravila</string>
     <string name="prijava_kao_administrator">Prijavite se kao administrator</string>
     <string name="prijava_kao_korisnik">Prijavite se kao korisnik</string>
+    <string name="pregled_objava">Pregled objava</string>
+    <string name="pregled_zajednica">Pregled zajednica</string>
 </resources>

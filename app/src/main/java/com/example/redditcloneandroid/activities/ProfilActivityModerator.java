@@ -74,5 +74,16 @@ public class ProfilActivityModerator extends AppCompatActivity {
             }
         });
 
+        Button kreiranjeZajednice = (Button) findViewById(R.id.kreiranje_zajednice_button_moderator);
+        kreiranjeZajednice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivityModerator.this, MainActivityCommunitiesModerator.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }

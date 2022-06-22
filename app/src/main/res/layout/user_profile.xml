@@ -70,7 +70,7 @@
             android:id="@+id/kreiranje_objave_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/kreiranje_objave"
+            android:text="@string/pregled_objava"
             android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 
@@ -86,7 +86,7 @@
             android:id="@+id/kreiranje_zajednice_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/kreiranje_zajednice"
+            android:text="@string/pregled_zajednica"
             android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 

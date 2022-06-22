@@ -49,6 +49,22 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/kreiranje_zajednice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kreiranje_zajednice_button_administrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pregled_zajednica"
+                android:backgroundTint="@color/yellow"
+                android:layout_marginLeft="3mm"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/suspendovanje_zajednice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

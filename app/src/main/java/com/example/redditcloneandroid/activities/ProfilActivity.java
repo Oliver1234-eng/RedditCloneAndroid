@@ -48,7 +48,7 @@ public class ProfilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ProfilActivity.this, CreateCommunityActivity.class);
+                Intent intent = new Intent(ProfilActivity.this, MainActivityCommunities.class);
 
                 startActivity(intent);
             }
