@@ -24,4 +24,6 @@
     <color name="green2">#7CB342</color>
     <color name="yelloww">#F0D835</color>
     <color name="red">#E53935</color>
+    <color name="sorting_color">#EEEEEE</color>
+    <color name="sorting_color2">#000000</color>
 </resources>

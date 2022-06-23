@@ -153,5 +153,27 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
+        Button ocenjivanjeButton = (Button) findViewById(R.id.ocenjivanje_objave_button);
+        ocenjivanjeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityUpvoteDownvote.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button sortiranjeButton = (Button) findViewById(R.id.sortiranje_objave_button);
+        sortiranjeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivitySortingPosts.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }

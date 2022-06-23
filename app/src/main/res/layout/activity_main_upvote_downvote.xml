@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activities.MainActivityUpvoteDownvote">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OCENJIVANJE OBJAVA" />
+
+    <TextView
+        android:id="@+id/integer_number_post1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="30sp"
+        android:text="Objava1: 0" />
+
+    <Button
+        android:id="@+id/increase_post1"
+        android:onClick="increaseIntegerPost1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/decrease_post1"
+        android:onClick="decreaseIntegerPost1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/integer_number_post2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="30sp"
+        android:text="Objava2: 0" />
+
+    <Button
+        android:id="@+id/increase_post2"
+        android:onClick="increaseIntegerPost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/decrease_post2"
+        android:onClick="decreaseIntegerPost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/integer_number_post3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="30sp"
+        android:text="Objava3: 0" />
+
+    <Button
+        android:id="@+id/increase_post3"
+        android:onClick="increaseIntegerPost3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/decrease_post3"
+        android:onClick="decreaseIntegerPost3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-" />
+
+</LinearLayout>
+</ScrollView>
