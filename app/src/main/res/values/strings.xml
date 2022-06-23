@@ -169,4 +169,7 @@
     <string name="objave_dva">Objave sa zajednice 2</string>
     <string name="objave_tri">Objave sa zajednice 3</string>
     <string name="ocenjivanje_objava">Ocenjivanje objava</string>
+    <string name="ocenjivanje_komentara">Ocenjivanje komentara</string>
+    <string name="sortiranje_objava">Sortiranje objava</string>
+    <string name="sortiranje_komentara">Sortiranje komentara</string>
 </resources>

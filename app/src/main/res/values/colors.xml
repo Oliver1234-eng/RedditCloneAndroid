@@ -26,4 +26,5 @@
     <color name="red">#E53935</color>
     <color name="sorting_color">#EEEEEE</color>
     <color name="sorting_color2">#000000</color>
+    <color name="darkerGray">#404040</color>
 </resources>

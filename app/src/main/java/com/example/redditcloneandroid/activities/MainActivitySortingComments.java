@@ -13,15 +13,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.example.redditcloneandroid.R;
-import com.example.redditcloneandroid.adapters.SortingPostsAdapter;
-import com.example.redditcloneandroid.model.SortingPosts;
+import com.example.redditcloneandroid.adapters.SortingCommentsAdapter;
+import com.example.redditcloneandroid.model.SortingComments;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MainActivitySortingPosts extends AppCompatActivity {
+public class MainActivitySortingComments extends AppCompatActivity {
 
-    public static ArrayList<SortingPosts> postList = new ArrayList<SortingPosts>();
+    public static ArrayList<SortingComments> commentList = new ArrayList<SortingComments>();
 
     private ListView listView;
     private Button sortButton;
@@ -34,7 +34,7 @@ public class MainActivitySortingPosts extends AppCompatActivity {
     boolean filterHidden = true;
 
     private Button circleButton, squareButton, rectangleButton, triangleButton, octagonButton, allButton;
-    private Button idAscButton, idDescButton, titleAscButton, titleDescButton;
+    private Button idAscButton, idDescButton, replyAscButton, replyDescButton;
 
     private ArrayList<String> selectedFilters = new ArrayList<String>();
     private String currentSearchText = "";
@@ -46,7 +46,7 @@ public class MainActivitySortingPosts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_sorting_posts);
+        setContentView(R.layout.activity_main_sorting_comments);
 
         initSearchWidgets();
         initWidgets();
@@ -70,8 +70,8 @@ public class MainActivitySortingPosts extends AppCompatActivity {
     private void unselectAllSortButtons() {
         lookUnselected(idAscButton);
         lookUnselected(idDescButton);
-        lookUnselected(titleAscButton);
-        lookUnselected(titleDescButton);
+        lookUnselected(replyAscButton);
+        lookUnselected(replyDescButton);
     }
 
     private void unselectAllFilterButtons() {
@@ -109,12 +109,12 @@ public class MainActivitySortingPosts extends AppCompatActivity {
 
         idAscButton = (Button) findViewById(R.id.idAsc);
         idDescButton = (Button) findViewById(R.id.idDesc);
-        titleAscButton = (Button) findViewById(R.id.titleAsc);
-        titleDescButton = (Button) findViewById(R.id.titleDesc);
+        replyAscButton = (Button) findViewById(R.id.replyAsc);
+        replyDescButton = (Button) findViewById(R.id.replyDesc);
     }
 
     private void initSearchWidgets() {
-        searchView = (SearchView) findViewById(R.id.postListSearchView);
+        searchView = (SearchView) findViewById(R.id.commentListSearchView);
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -125,18 +125,18 @@ public class MainActivitySortingPosts extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String s) {
                 currentSearchText = s;
-                ArrayList<SortingPosts> filteredShapes = new ArrayList<SortingPosts>();
+                ArrayList<SortingComments> filteredShapes = new ArrayList<SortingComments>();
 
-                for(SortingPosts sortingPost : postList) {
-                    if(sortingPost.getTitle().toLowerCase().contains(s.toLowerCase())) {
+                for(SortingComments sortingComment : commentList) {
+                    if(sortingComment.getReply().toLowerCase().contains(s.toLowerCase())) {
                         if(selectedFilters.contains("all")) {
-                            filteredShapes.add(sortingPost);
+                            filteredShapes.add(sortingComment);
                         }
                     }
                     else {
                         for(String filter : selectedFilters) {
-                            if (sortingPost.getTitle().toLowerCase().contains(filter)) {
-                                filteredShapes.add(sortingPost);
+                            if (sortingComment.getReply().toLowerCase().contains(filter)) {
+                                filteredShapes.add(sortingComment);
                             }
                         }
                     }
@@ -151,28 +151,28 @@ public class MainActivitySortingPosts extends AppCompatActivity {
 
     private void setupData()
     {
-        SortingPosts circle = new SortingPosts("0", "Objava1");
-        postList.add(circle);
+        SortingComments circle = new SortingComments("0", "Komentar1");
+        commentList.add(circle);
 
-        SortingPosts triangle = new SortingPosts("1","Objava2");
-        postList.add(triangle);
+        SortingComments triangle = new SortingComments("1","Komentar2");
+        commentList.add(triangle);
 
-        SortingPosts square = new SortingPosts("2","Objava3");
-        postList.add(square);
+        SortingComments square = new SortingComments("2","Komentar3");
+        commentList.add(square);
 
-        SortingPosts rectangle = new SortingPosts("3","Objava4");
-        postList.add(rectangle);
+        SortingComments rectangle = new SortingComments("3","Komentar4");
+        commentList.add(rectangle);
 
-        SortingPosts octagon = new SortingPosts("4","Objava5");
-        postList.add(octagon);
+        SortingComments octagon = new SortingComments("4","Komentar5");
+        commentList.add(octagon);
 
     }
 
     private void setUpList()
     {
-        listView = (ListView) findViewById(R.id.postListView);
+        listView = (ListView) findViewById(R.id.commentListView);
 
-        setAdapter(postList);
+        setAdapter(commentList);
     }
 
     private void setUpOnclickListener()
@@ -181,8 +181,8 @@ public class MainActivitySortingPosts extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
             {
-                SortingPosts selectShape = (SortingPosts) (listView.getItemAtPosition(position));
-                Intent showDetail = new Intent(getApplicationContext(), DetailActivitySortingPosts.class);
+                SortingComments selectShape = (SortingComments) (listView.getItemAtPosition(position));
+                Intent showDetail = new Intent(getApplicationContext(), DetailActivitySortingComments.class);
                 showDetail.putExtra("id",selectShape.getId());
                 startActivity(showDetail);
             }
@@ -196,18 +196,18 @@ public class MainActivitySortingPosts extends AppCompatActivity {
             selectedFilters.add(status);
         }
 
-        ArrayList<SortingPosts> filteredShapes = new ArrayList<SortingPosts>();
+        ArrayList<SortingComments> filteredShapes = new ArrayList<SortingComments>();
 
-        for(SortingPosts sortingPost : postList) {
+        for(SortingComments sortingComment : commentList) {
 
             for(String filter : selectedFilters) {
-                if(sortingPost.getTitle().toLowerCase().contains(filter)) {
+                if(sortingComment.getReply().toLowerCase().contains(filter)) {
                     if (currentSearchText == "") {
-                        filteredShapes.add(sortingPost);
+                        filteredShapes.add(sortingComment);
                     }
                     else {
-                        if (sortingPost.getTitle().toLowerCase().contains(currentSearchText.toLowerCase())) {
-                            filteredShapes.add(sortingPost);
+                        if (sortingComment.getReply().toLowerCase().contains(currentSearchText.toLowerCase())) {
+                            filteredShapes.add(sortingComment);
                         }
                     }
                 }
@@ -225,31 +225,31 @@ public class MainActivitySortingPosts extends AppCompatActivity {
         unselectAllFilterButtons();
         lookSelected(allButton);
 
-        setAdapter(postList);
+        setAdapter(commentList);
     }
 
     public void triangleFilterTapped(View view) {
-        filterList("objava1");
+        filterList("odgovor1");
         selectFilterUI(triangleButton);
     }
 
     public void squareFilterTapped(View view) {
-        filterList("objava2");
+        filterList("odgovor2");
         selectFilterUI(squareButton);
     }
 
     public void octagonFilterTapped(View view) {
-        filterList("objava3");
+        filterList("odgovor3");
         selectFilterUI(octagonButton);
     }
 
     public void rectangleFilterTapped(View view) {
-        filterList("objava4");
+        filterList("odgovor4");
         selectFilterUI(rectangleButton);
     }
 
     public void circleFilterTapped(View view) {
-        filterList("objava5");
+        filterList("odgovor5");
         selectFilterUI(circleButton);
     }
 
@@ -308,46 +308,46 @@ public class MainActivitySortingPosts extends AppCompatActivity {
     }
 
     public void idASCTapped(View view) {
-        Collections.sort(postList, SortingPosts.idAscending);
+        Collections.sort(commentList, SortingComments.idAscending);
         chechForFilter();
         unselectAllSortButtons();
         lookSelected(idAscButton);
     }
 
     public void idDESCTapped(View view) {
-        Collections.sort(postList, SortingPosts.idAscending);
-        Collections.reverse(postList);
+        Collections.sort(commentList, SortingComments.idAscending);
+        Collections.reverse(commentList);
         chechForFilter();
         unselectAllSortButtons();
         lookSelected(idDescButton);
     }
 
-    public void titleASCTapped(View view) {
-        Collections.sort(postList, SortingPosts.titleAscending);
+    public void replyASCTapped(View view) {
+        Collections.sort(commentList, SortingComments.replyAscending);
         chechForFilter();
         unselectAllSortButtons();
-        lookSelected(titleAscButton);
+        lookSelected(replyAscButton);
     }
 
-    public void titleDESCTapped(View view) {
-        Collections.sort(postList, SortingPosts.titleAscending);
-        Collections.reverse(postList);
+    public void replyDESCTapped(View view) {
+        Collections.sort(commentList, SortingComments.replyAscending);
+        Collections.reverse(commentList);
         chechForFilter();
         unselectAllSortButtons();
-        lookSelected(titleDescButton);
+        lookSelected(replyDescButton);
     }
 
     private void chechForFilter() {
         if(selectedFilters.contains("all")) {
             if(currentSearchText.equals("")) {
-                setAdapter(postList);
+                setAdapter(commentList);
             }
             else {
-                ArrayList<SortingPosts> filteredShapes = new ArrayList<SortingPosts>();
+                ArrayList<SortingComments> filteredShapes = new ArrayList<SortingComments>();
 
-                for(SortingPosts sortingPost : postList) {
-                    if(sortingPost.getTitle().toLowerCase().contains(currentSearchText)) {
-                        filteredShapes.add(sortingPost);
+                for(SortingComments sortingComment : commentList) {
+                    if(sortingComment.getReply().toLowerCase().contains(currentSearchText)) {
+                        filteredShapes.add(sortingComment);
                     }
                 }
                 setAdapter(filteredShapes);
@@ -358,8 +358,8 @@ public class MainActivitySortingPosts extends AppCompatActivity {
         }
     }
 
-    private void setAdapter(ArrayList<SortingPosts> shapeList) {
-        SortingPostsAdapter adapter = new SortingPostsAdapter(getApplicationContext(), 0, shapeList);
+    private void setAdapter(ArrayList<SortingComments> shapeList) {
+        SortingCommentsAdapter adapter = new SortingCommentsAdapter(getApplicationContext(), 0, shapeList);
         listView.setAdapter(adapter);
     }
 }

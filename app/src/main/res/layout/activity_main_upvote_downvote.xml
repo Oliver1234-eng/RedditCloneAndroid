@@ -15,7 +15,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OCENJIVANJE OBJAVA" />
+        android:text="OCENJIVANJE OBJAVA"
+        android:textSize="25sp"/>
 
     <TextView
         android:id="@+id/integer_number_post1"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:text="Objava1: 0" />
 
     <Button
@@ -46,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:text="Objava2: 0" />
 
     <Button
@@ -69,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:text="Objava3: 0" />
 
     <Button

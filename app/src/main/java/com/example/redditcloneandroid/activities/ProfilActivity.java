@@ -164,12 +164,34 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
-        Button sortiranjeButton = (Button) findViewById(R.id.sortiranje_objave_button);
-        sortiranjeButton.setOnClickListener(new View.OnClickListener() {
+        Button ocenjivanjeKomentaraButton = (Button) findViewById(R.id.ocenjivanje_komentara_button);
+        ocenjivanjeKomentaraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivityUpvoteDownvoteComment.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button sortiranjeObjavaButton = (Button) findViewById(R.id.sortiranje_objava_button);
+        sortiranjeObjavaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(ProfilActivity.this, MainActivitySortingPosts.class);
+
+                startActivity(intent);
+            }
+        });
+
+        Button sortiranjeKomentaraButton = (Button) findViewById(R.id.sortiranje_komentara_button);
+        sortiranjeKomentaraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfilActivity.this, MainActivitySortingComments.class);
 
                 startActivity(intent);
             }

@@ -97,16 +97,48 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ocenjivanje_komentara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ocenjivanje_komentara_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ocenjivanje_komentara"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/sortiranje_objava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/sortiranje_objave_button"
+            android:id="@+id/sortiranje_objava_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ocenjivanje_objava"
+            android:text="@string/sortiranje_objava"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginLeft="3mm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sortiranje_komentara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sortiranje_komentara_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sortiranje_komentara"
             android:backgroundTint="@color/yellow"
             android:layout_marginLeft="3mm"/>
 

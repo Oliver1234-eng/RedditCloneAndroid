@@ -78,7 +78,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button11 = (Button) findViewById(R.id.crud_report_comments);
+        Button button13 = (Button) findViewById(R.id.window_guest2_login_button);
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityCommentGuest.class);
+
+                startActivity(intent);
+            }
+        });
+
+        /*Button button11 = (Button) findViewById(R.id.crud_report_comments);
         button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,18 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
             }
-        });
-
-        Button button13 = (Button) findViewById(R.id.window_guest2_login_button);
-        button13.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, MainActivityCommentGuest.class);
-
-                startActivity(intent);
-            }
-        });
+        });*/
 
         /*Button button6 = (Button) findViewById(R.id.crud_users);
         button6.setOnClickListener(new View.OnClickListener() {

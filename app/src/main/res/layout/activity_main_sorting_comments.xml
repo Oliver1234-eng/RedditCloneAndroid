@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivitySortingComments">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sorting_color">
+
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:background="@null"
+            android:onClick="showSortTapped"
+            android:text="SORT"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textAllCaps="true"
+            android:textColor="@color/sorting_color2"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:background="@null"
+            android:text="FILTER"
+            android:layout_gravity="end"
+            android:onClick="showFilterTapped"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/red"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentListSearchView"
+        android:iconifiedByDefault="false"
+        android:queryHint="Tekst komentara"/>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="All"
+            android:id="@+id/allFilter"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:onClick="allFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Komentar1"
+            android:textColor="@color/red"
+            android:id="@+id/triangleFilter"
+            android:background="@color/white"
+            android:onClick="triangleFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Komentar2"
+            android:textColor="@color/red"
+            android:id="@+id/squareFilter"
+            android:background="@color/white"
+            android:onClick="squareFilterTapped"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Komentar3"
+            android:id="@+id/octagonFilter"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:onClick="octagonFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Komentar4"
+            android:id="@+id/rectangleFilter"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:onClick="rectangleFilterTapped"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Komentar5"
+            android:textColor="@color/red"
+            android:id="@+id/circleFilter"
+            android:background="@color/white"
+            android:onClick="circleFilterTapped"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sortTabsLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/idAsc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ID ASC"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:onClick="idASCTapped"/>
+
+        <Button
+            android:id="@+id/idDesc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ID DESC"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:onClick="idDESCTapped"/>
+
+        <Button
+            android:id="@+id/replyAsc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="TEKST ASC"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:onClick="replyASCTapped"/>
+
+        <Button
+            android:id="@+id/replyDesc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:text="TEKST DESC"
+            android:background="@color/white"
+            android:onClick="replyDESCTapped"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/commentListView"/>
+
+</LinearLayout>

@@ -53,19 +53,19 @@ public class MainActivityUpvoteDownvote extends AppCompatActivity {
     private void displayPost1(int number) {
         TextView displayIntegerPost1 = (TextView) findViewById(
                 R.id.integer_number_post1);
-        displayIntegerPost1.setText("Integer: " + number);
+        displayIntegerPost1.setText("Objava1: " + number);
 
     }
 
     private void displayPost2(int number) {
         TextView displayIntegerPost2 = (TextView) findViewById(
                 R.id.integer_number_post2);
-        displayIntegerPost2.setText("Integer: " + number);
+        displayIntegerPost2.setText("Objava2: " + number);
     }
 
     private void displayPost3(int number) {
         TextView displayIntegerPost3 = (TextView) findViewById(
                 R.id.integer_number_post3);
-        displayIntegerPost3.setText("Integer: " + number);
+        displayIntegerPost3.setText("Objava3: " + number);
     }
 }

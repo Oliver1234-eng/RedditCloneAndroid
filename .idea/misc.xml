@@ -27,6 +27,8 @@
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_create_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_sorting_comments.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_sorting_posts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_detail_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_edit_comment_three.xml" value="0.25416666666666665" />
@@ -68,7 +70,10 @@
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_report_comments_moderator.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_report_posts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_report_posts_moderator.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_upvote_downvote.xml" value="0.1" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_sorting_comments.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_sorting_posts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_upvote_downvote.xml" value="0.16" />
+        <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_upvote_downvote_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_user_retrofit.xml" value="0.21991701244813278" />
         <entry key="..\:/Users/Kojic/Desktop/redditcloneandroid/app/src/main/res/layout/activity_main_users.xml" value="0.25416666666666665" />
