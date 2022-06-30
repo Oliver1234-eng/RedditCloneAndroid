@@ -87,5 +87,13 @@
             android:layout_height="wrap_content"
             android:text="-" />
 
+        <Button
+            android:id="@+id/nazad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/holo_blue"
+            android:text="@string/nazad"/>
+
     </LinearLayout>
 </ScrollView>

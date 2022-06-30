@@ -43,7 +43,7 @@ public class CreatePostsActivityAdministrator extends AppCompatActivity {
         titleText = findViewById(R.id.titleText);
         textText = findViewById(R.id.textText);
         idOfCommunityText = findViewById(R.id.idOfCommunityText);
-        idOfCommunityText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "4")});
+        idOfCommunityText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "5")});
         createPostButton = findViewById(R.id.createPostButton);
         titleText.addTextChangedListener(new TextWatcher() {
             @Override

@@ -1,7 +1,9 @@
 package com.example.redditcloneandroid.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +20,17 @@ public class MainActivityUpvoteDownvoteComment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_upvote_downvote_comment);
+
+        Button nazad = (Button) findViewById(R.id.nazad);
+        nazad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivityUpvoteDownvoteComment.this, ProfilActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 
     public void increaseIntegerComment1(View view) {

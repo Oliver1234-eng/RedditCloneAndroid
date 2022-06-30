@@ -41,7 +41,7 @@ public class CreateReportPostsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_report_post);
         reportReasonPostText = findViewById(R.id.reportReasonPostText);
         whichPostText = findViewById(R.id.whichPostText);
-        whichPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "9")});
+        whichPostText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "5")});
         createReportPostButton = findViewById(R.id.createReportPostButton);
         reportReasonPostText.addTextChangedListener(new TextWatcher() {
             @Override

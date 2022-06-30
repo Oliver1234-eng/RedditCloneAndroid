@@ -98,7 +98,7 @@
             android:id="@+id/prijava_kao_korisnik_dugme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prijavi se kao moderator"
+            android:text="Prijavi se"
             android:layout_marginTop="5mm"
             android:backgroundTint="@color/yellow"/>
 
@@ -242,7 +242,7 @@
             android:backgroundTint="@color/yellow"/>
 
 
-    </LinearLayout> -->
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -276,7 +276,7 @@
             android:backgroundTint="@color/yellow"/>
 
 
-    </LinearLayout>
+    </LinearLayout> -->
 
 </LinearLayout>
 </ScrollView>

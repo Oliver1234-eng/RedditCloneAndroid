@@ -41,7 +41,7 @@ public class CreateReportCommentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_report_comment);
         reportReasonCommentText = findViewById(R.id.reportReasonCommentText);
         whichCommentText = findViewById(R.id.whichCommentText);
-        whichCommentText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "9")});
+        whichCommentText.setFilters(new InputFilter[]{ new InputFilterMinMax("1", "5")});
         createReportCommentButton = findViewById(R.id.createReportCommentButton);
         reportReasonCommentText.addTextChangedListener(new TextWatcher() {
             @Override

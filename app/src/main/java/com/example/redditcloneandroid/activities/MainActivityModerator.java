@@ -27,9 +27,9 @@ public class MainActivityModerator extends AppCompatActivity {
         loginButtonKorisnik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("moderator") && password.getText().toString().equals("moderator")){
+                if(username.getText().toString().equals("korisnik1") && password.getText().toString().equals("korisnik1")){
                     //correct
-                    Toast.makeText(MainActivityModerator.this,"Uspesna prijava kao moderator",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityModerator.this,"Uspesna prijava",Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(MainActivityModerator.this, MainActivityPostModerator.class);
                     startActivity(intent);

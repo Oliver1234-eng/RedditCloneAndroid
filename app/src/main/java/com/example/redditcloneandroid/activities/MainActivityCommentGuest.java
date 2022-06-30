@@ -5,12 +5,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.redditcloneandroid.MainActivity;
 import com.example.redditcloneandroid.R;
 import com.example.redditcloneandroid.adapters.CommentsGuestAdapter;
 import com.example.redditcloneandroid.interfaces.CommentGuestCRUDInterface;
@@ -39,6 +41,17 @@ public class MainActivityCommentGuest extends AppCompatActivity {
         setContentView(R.layout.activity_main_comments_guest);
         listViewComments = findViewById(R.id.listViewComments);
         getAll();
+
+        Button button2 = (Button) findViewById(R.id.proba);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivityCommentGuest.this, MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
 
     }
 
